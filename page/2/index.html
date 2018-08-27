@@ -1,0 +1,3091 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="这是一个会java、c++、python、go、javascript，研究区块链、云计算、容器、虚拟化、密码学，爱好摄影、旅行、历史、经济、心理学 的程序员之个人博客">
+<meta name="keywords" content="计算机 程序员 java blockchain go 西电 摄影 文学 经济 理财">
+<meta property="og:type" content="website">
+<meta property="og:title" content="fengziboboy&amp;个人博客">
+<meta property="og:url" content="https://xdcrazyboy.github.io/page/2/index.html">
+<meta property="og:site_name" content="fengziboboy&amp;个人博客">
+<meta property="og:description" content="这是一个会java、c++、python、go、javascript，研究区块链、云计算、容器、虚拟化、密码学，爱好摄影、旅行、历史、经济、心理学 的程序员之个人博客">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="fengziboboy&amp;个人博客">
+<meta name="twitter:description" content="这是一个会java、c++、python、go、javascript，研究区块链、云计算、容器、虚拟化、密码学，爱好摄影、旅行、历史、经济、心理学 的程序员之个人博客">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://xdcrazyboy.github.io/page/2/"/>
+
+
+
+
+
+  <title>fengziboboy&个人博客</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?0689121057a518213bd055c127761eef";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">fengziboboy&个人博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">欢迎小伙伴的到来</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-主页">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            主页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-分类">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-文章">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            文章
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-简历">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            简历
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-公益404">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://xdcrazyboy.github.io/2018/08/28/分布式服务架构/微服务那些事儿/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="fengziboboy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="fengziboboy&个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/28/分布式服务架构/微服务那些事儿/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-28T00:00:35+08:00">
+                2018-08-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/28/分布式服务架构/微服务那些事儿/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/08/28/分布式服务架构/微服务那些事儿/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>阅读书目：《微服务那些事儿》，鼓励大家支持，书很薄。</p>
+<h2 id="为什么选择微服务"><a href="#为什么选择微服务" class="headerlink" title="为什么选择微服务"></a>为什么选择微服务</h2><h3 id="别人挫呀-传统架构的问题"><a href="#别人挫呀-传统架构的问题" class="headerlink" title="别人挫呀-传统架构的问题"></a>别人挫呀-传统架构的问题</h3><ol>
+<li>笨拙</li>
+<li>耦合严重</li>
+<li>协作困难</li>
+<li>无法持续交付</li>
+<li>受技术栈限制-技术选型受限</li>
+<li>债务多，该bug太难了，越改越多</li>
+</ol>
+<h3 id="微服务可以解决那些挫"><a href="#微服务可以解决那些挫" class="headerlink" title="微服务可以解决那些挫"></a>微服务可以解决那些挫</h3><ol>
+<li>架构轻量灵活、可应付需求的变化</li>
+<li>可持续交付</li>
+<li>业务敏捷</li>
+<li>独立演进</li>
+<li>高可用、高性能</li>
+<li>站在云端</li>
+</ol>
+<h3 id="业务能力的拆分是核心"><a href="#业务能力的拆分是核心" class="headerlink" title="业务能力的拆分是核心"></a>业务能力的拆分是核心</h3><ol>
+<li>拆还是不拆？（耦合、解耦共用代码改多处、收益在哪里？）</li>
+<li>如何拆？（熟悉系统：数据模型和业务模型、金字塔结构）<ul>
+<li>关键指标<ol>
+<li>公共的业务功能</li>
+<li>重点业务</li>
+<li>对系统影响大的业务功能</li>
+<li>经常变化的业务主体</li>
+<li>特殊业务主体</li>
+<li>不同业务渠道</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>粒度  （结合实际情况，循序渐进，抓大放小）</li>
+<li>边界 （边界清晰、分工明确）</li>
+</ol>
+<p>无关其技、唯手熟尔。</p>
+<h3 id="如何使用微服务"><a href="#如何使用微服务" class="headerlink" title="如何使用微服务"></a>如何使用微服务</h3><ol>
+<li>如何规划<ul>
+<li>全局性</li>
+<li>针对性</li>
+<li>良性发展</li>
+<li>格局大</li>
+</ul>
+</li>
+<li>微服务重构<ul>
+<li>影响因素</li>
+<li>重构原则<blockquote>
+<p>前后端分离、代价最小原则、影响最小原则、吐故纳新。</p>
+<ul>
+<li>重构方法<br>接骨法（服务化，Rest接口，消息队列，管道链接业务）、分批逃跑法（分批拆）、<br>修路法（占用部分车道，保证路还是可以通的）</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<p>不要低估了微服务的复杂度、也不要觉得微服务国语复杂。</p>
+<h3 id="微服务的朋友圈"><a href="#微服务的朋友圈" class="headerlink" title="微服务的朋友圈"></a>微服务的朋友圈</h3><ol>
+<li>容器（容器的标签就是隔离；微服务拆分太多，部署复杂，而容器就相当于微服务的东风；）<ul>
+<li>好处：环境一致性、减少了部署的重复工作、快速交付、安全性高、易集成、自带体系</li>
+</ul>
+</li>
+<li>DevOps（开发+运维），跟微服务天生一对，以前团队人少可以践行DevOps，现在用微服务，团队拆分之后，又恢复到了以前。</li>
+<li>SOA（面向服务的架构）有ESB，Web Service，不过跟微服务还是很多不同。<blockquote>
+<p>整体，水平多层，按层级划分部门，粗粒度，有复杂组件，业务逻辑跨多个领域，ESB充当服务之间的通信。</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="技术实现"><a href="#技术实现" class="headerlink" title="技术实现"></a>技术实现</h2><h3 id="Spring-Boot-Spring-Cloud-（Liquibase、Swagger、Sonar）"><a href="#Spring-Boot-Spring-Cloud-（Liquibase、Swagger、Sonar）" class="headerlink" title="Spring Boot + Spring Cloud （Liquibase、Swagger、Sonar）"></a>Spring Boot + Spring Cloud （Liquibase、Swagger、Sonar）</h3><h3 id="Spring-Boot"><a href="#Spring-Boot" class="headerlink" title="Spring Boot"></a>Spring Boot</h3><p><strong>特点</strong></p>
+<ol>
+<li>快速构建Spring应用</li>
+<li>内嵌tomcat、jetty容器，无需单独安装容器</li>
+<li>简化了maven、gradle配置</li>
+<li>通过注解自动化配置了Spring，实现零配置</li>
+<li>可以和其他主流框架无缝集成，如Spring Cloud</li>
+<li>jar包直接运行。</li>
+</ol>
+<h3 id="Spring-Cloud"><a href="#Spring-Cloud" class="headerlink" title="Spring Cloud"></a>Spring Cloud</h3><p><strong>特点</strong></p>
+<ol>
+<li>功能齐全</li>
+<li>标准化</li>
+<li>简单方便</li>
+<li>按需取用</li>
+<li>轻量</li>
+<li>易扩展、易维护</li>
+<li>可复用性</li>
+</ol>
+<p><strong>服务管理</strong></p>
+<p><strong>注册中心-Eureka</strong></p>
+<ul>
+<li><p>服务端和客户端，发现和被发现-注册和被注册的关系</p>
+</li>
+<li><p>发现实际的服务的网络地址，便于被外界发现和使用。</p>
+</li>
+</ul>
+<p><strong>网关-Zuul</strong>（智能路由，类似的有Nginx）</p>
+<ul>
+<li><p>最重要的作用：<strong>为前台提供后台服务的聚合</strong>，提供一个统一的服务出口，解除它们之间的耦合，同时负责鉴权、<strong>认证</strong>、<strong>安全和调度</strong>。过滤器实现。</p>
+</li>
+<li><p><strong>反向代理</strong>：代理的是服务端，前台不需要知道真正的服务端是谁，交给Zuul负责路由到合适的服务上（负载均衡）。路由匹配。</p>
+</li>
+<li><p><strong>正向代理</strong>:代理的是客户端，（类似代购，商家不知道是谁要买）。</p>
+</li>
+</ul>
+<p><strong>客户端负载均衡-Ribbon</strong></p>
+<p>也就是选择合适的服务端，减少服务端的压力。</p>
+<h3 id="微服务架构的通信方式"><a href="#微服务架构的通信方式" class="headerlink" title="微服务架构的通信方式"></a>微服务架构的通信方式</h3><ol>
+<li><p>同步</p>
+<ul>
+<li>Rest(主流，是一套风格规范，面向资源的)</li>
+<li>SOAP(面向方法)</li>
+<li>RPC (dubbo，面向接口)</li>
+</ul>
+</li>
+<li><p>异步</p>
+<ul>
+<li>吞吐能力强，需要消息队列！！！<blockquote>
+<p>JMS、ActiveMQ、Kafka、RabbitMQ。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://xdcrazyboy.github.io/2018/08/28/Java基础/多线程&并发编程/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="fengziboboy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="fengziboboy&个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/28/Java基础/多线程&并发编程/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-28T00:00:35+08:00">
+                2018-08-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/28/Java基础/多线程&并发编程/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/08/28/Java基础/多线程&并发编程/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ol>
+<li><a href="https://blog.csdn.net/kinglyjn/article/details/53666577" target="_blank" rel="noopener">常见框架单例、多例与线程安全性总结</a></li>
+</ol>
+<h1 id="多例-和-单例-的线程安全性分析"><a href="#多例-和-单例-的线程安全性分析" class="headerlink" title="多例 和 单例 的线程安全性分析"></a>多例 和 单例 的线程安全性分析</h1><p><strong>线程安全</strong>问题是指: <strong>多个用户**</strong>同时<strong>在访问</strong>同一个程序时<strong>，其对于某一数据的修改，</strong>会不会影响到其他用户中的该数据**。若没有影响，则是线程安全的;若有可能影响，则是线程不安全的。</p>
+<ol>
+<li><strong>HttpServlet</strong></li>
+</ol>
+<p>单例——即无论多少用户访问同一个业务，如 LoginServlet，Web 容器只会创建一个该 Servlet 实例。而该实例是允许多用户访问的。</p>
+<p>若 Servlet 中包含成员变量，则每个用户对于成员变量的修改，均会影响到其他用户所看到的该变量的值，所以这时是线程不安全的。若不包含成员变量，则是线程安全的。</p>
+<ol start="2">
+<li><strong>HttpSession</strong></li>
+</ol>
+<p>多例——Web 容器会为每个用户开辟一个 Session，多个用户会有多个 Session。而每个用户只能访问自己的 Session。所以，对于 Session 来说，就不存在并发访问的情况，也就不存在线程安全的问题了。所以可以说是线程安全的。</p>
+<ol start="3">
+<li><p>SpingMVC <strong>Controller</strong><br>Spring MVC Controller<strong>默认是单例</strong>的：<br>单例的原因有二：<br>1、为了性能。<br>2、不需要多例。<br>如果需要多例，则需要在Controller类上加注解 @Scope(“prototype”)</p>
+</li>
+<li><p>Struts2 的 <strong>Action</strong></p>
+</li>
+</ol>
+<p><strong>多例的</strong>——对于同一个业务，例如 LoginAction，系统会为每一个用户创建一个LoginAction 的实例，并使其成员变量 username 与 password 接收用户 交的数据。同一用户只能访问自己的 Action。所以，对于 Action 来说，就不存在并发访问的情况，也就不存在线程安全的问题了。所以可以说是线程安全的。 </p>
+<ol start="5">
+<li>Hibernate 的<strong>SessionFactory</strong></li>
+</ol>
+<p>单例——无论多少用户访问该项目，系统只会创建一个 SessionFactory 对象，即这个对象是可以被所有用户访问的。</p>
+<p>SessionFactory实现类中所包含的成员变量基本都是 final常量，即任何用户均不能修改。所以，也就不存在用户的修改对其他用户的影响问题了，所以是线程安全的。 </p>
+<ol start="6">
+<li>Hibernate 的 <strong>Session</strong></li>
+</ol>
+<p><strong>多例</strong>——系统会为每个用户创建一个 Session。</p>
+<p>Session 的实现类中定义了很多的非 final 成员变量，一个事务对成员变量所做的修改，会影响到另一个事务对同一数据的访问结果，所以是线程不安全的。 </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://xdcrazyboy.github.io/2018/08/28/Java基础/设计模式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="fengziboboy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="fengziboboy&个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/28/Java基础/设计模式/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-28T00:00:35+08:00">
+                2018-08-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/28/Java基础/设计模式/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/08/28/Java基础/设计模式/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="适配器-amp-装饰器-amp-代理模式"><a href="#适配器-amp-装饰器-amp-代理模式" class="headerlink" title="适配器 &amp; 装饰器 &amp; 代理模式"></a>适配器 &amp; 装饰器 &amp; 代理模式</h1><ol>
+<li><p>适配器模式，一个适配允许通常因为接口不兼容而不能在一起工作的类工作在一起，做法是将类自己的接口包裹在一个已存在的类中。</p>
+<blockquote>
+<p>特点在于兼容</p>
+</blockquote>
+</li>
+<li><p>装饰器模式，原有的不能满足现有的需求，对原有的进行增强。</p>
+<blockquote>
+<p>特点在于增强</p>
+</blockquote>
+</li>
+<li><p>代理模式，同一个类而去调用另一个类的方法，不对这个方法进行直接操作。</p>
+<blockquote>
+<p>特点在于隔离</p>
+</blockquote>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://xdcrazyboy.github.io/2018/08/28/Java基础/GC/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="fengziboboy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="fengziboboy&个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/28/Java基础/GC/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-28T00:00:35+08:00">
+                2018-08-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/28/Java基础/GC/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/08/28/Java基础/GC/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="常见垃圾回收器"><a href="#常见垃圾回收器" class="headerlink" title="常见垃圾回收器"></a>常见垃圾回收器</h1><ol>
+<li>串行（Serial）回收器是单线程的一个回收器，简单、易实现、效率高。</li>
+<li>并行（ParNew）回收器是Serial的多线程版，可以充分的利用CPU资源，减少回收的时间。</li>
+<li>吞吐量优先（Parallel Scavenge）回收器，侧重于吞吐量的控制。</li>
+<li>并发标记清除（<strong>CMS</strong>，Concurrent Mark Sweep）回收器是一种以获取最短回收停顿时间为目标的回收器，该回收器是基于“标记-清除”算法实现的。</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://xdcrazyboy.github.io/2018/08/28/Java基础/类加载机制/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="fengziboboy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="fengziboboy&个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/28/Java基础/类加载机制/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-28T00:00:35+08:00">
+                2018-08-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/28/Java基础/类加载机制/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/08/28/Java基础/类加载机制/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="类加载器分类"><a href="#类加载器分类" class="headerlink" title="类加载器分类"></a>类加载器分类</h2><p>按照虚拟机角度分类：</p>
+<ul>
+<li>启动类加载器（Bootstrap ClassLoader），这个类加载器用 C++ 实现，是虚拟机自身的一部分；</li>
+<li>所有其他类的加载器，这些类由 Java 实现，独立于虚拟机外部，并且全都继承自抽象类 java.lang.ClassLoader。</li>
+</ul>
+<p>更加细分：</p>
+<ul>
+<li><p><strong>启动类加载器</strong>（Bootstrap ClassLoader）此类加载器负责将存放在 &lt;JAVA_HOME&gt;\lib 目录中的，或者被 -Xbootclasspath 参数所指定的路径中的，并且是虚拟机识别的（仅按照文件名识别，如 rt.jar，名字不符合的类库即使放在 lib 目录中也不会被加载）类库加载到虚拟机内存中。启动类加载器无法被 Java 程序直接引用，用户在编写自定义类加载器时，如果需要把加载请求委派给启动类加载器，直接使用 null 代替即可。</p>
+</li>
+<li><p><strong>扩展类加载器</strong>（Extension ClassLoader）这个类加载器是由 ExtClassLoader（sun.misc.Launcher$ExtClassLoader）实现的。它负责将 &lt;JAVA_HOME&gt;/lib/ext 或者被 java.ext.dir 系统变量所指定路径中的所有类库加载到内存中，开发者可以直接使用扩展类加载器。</p>
+</li>
+<li><p><strong>应用程序类加载器</strong>（Application ClassLoader）这个类加载器是由 AppClassLoader（sun.misc.Launcher$AppClassLoader）实现的。由于这个类加载器是 ClassLoader 中的 getSystemClassLoader() 方法的返回值，因此一般称为系统类加载器。它负责加载用户类路径（ClassPath）上所指定的类库，开发者可以直接使用这个类加载器，如果应用程序中没有自定义过自己的类加载器，一般情况下这个就是<strong>程序中默认的类加载器</strong>。</p>
+</li>
+</ul>
+<p><strong>自定义类加载器</strong></p>
+<ol>
+<li>定义一个类，继承ClassLoader</li>
+<li>重写 loadClass 方法</li>
+<li>实例化 Class 对象</li>
+</ol>
+<p><strong>自定义类加载器的优势</strong></p>
+<ol>
+<li>高度的灵活性</li>
+<li>通过自定义类加载器可以实现热部署</li>
+<li>代码加密</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://xdcrazyboy.github.io/2018/08/28/Java基础/动态代理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="fengziboboy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="fengziboboy&个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/28/Java基础/动态代理/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-28T00:00:35+08:00">
+                2018-08-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/28/Java基础/动态代理/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/08/28/Java基础/动态代理/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Java 动态代理，具体有如下四步骤：</p>
+<ol>
+<li>通过实现 InvocationHandler 接口创建自己的调用处理器；</li>
+<li>通过为 Proxy 类指定 ClassLoader 对象和一组 interface 来创建动态代理类；</li>
+<li>通过反射机制获得动态代理类的构造函数，其唯一参数类型是调用处理器接口类型；</li>
+<li>通过构造函数创建动态代理类实例，构造时调用处理器对象作为参数被传入。</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://xdcrazyboy.github.io/2018/08/28/Java基础/Redis要知道的那些事儿/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="fengziboboy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="fengziboboy&个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/28/Java基础/Redis要知道的那些事儿/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-28T00:00:35+08:00">
+                2018-08-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/28/Java基础/Redis要知道的那些事儿/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/08/28/Java基础/Redis要知道的那些事儿/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="老规矩，显示参考资料"><a href="#老规矩，显示参考资料" class="headerlink" title="老规矩，显示参考资料"></a>老规矩，显示参考资料</h2><ol>
+<li><a href="https://zhuanlan.zhihu.com/p/42272979" target="_blank" rel="noopener">Redis是单线程的，但Redis为什么这么快？</a></li>
+<li><a href="https://blog.csdn.net/irean_lau/article/details/51360277" target="_blank" rel="noopener">Redis容灾策略</a></li>
+</ol>
+<h2 id="Redis是什么"><a href="#Redis是什么" class="headerlink" title="Redis是什么"></a>Redis是什么</h2><ul>
+<li><p>Redis是一个开源的内存中的数据结构存储系统，它可以用作：<strong>数据库、缓存和消息中间件</strong>。</p>
+</li>
+<li><p>Redis 内置了<strong>复制</strong>（Replication），LUA脚本（Lua scripting）， LRU驱动事件（LRU eviction），<strong>事务</strong>（Transactions） 和<strong>不同级别的磁盘持久化</strong>（Persistence），并通过 Redis<strong>哨兵</strong>（Sentinel）和<strong>自动分区</strong>（Cluster）<strong>提供高可用性</strong>（High Availability）。</p>
+</li>
+<li><p>提供了持久化的选项,根据实际情况，可以每隔一定时间将数据集导出到磁盘（快照），或者追加到命令日志中（AOF只追加文件），他会在执行写命令时，将被执行的写命令复制到硬盘里面。 也可以关闭持久化功能，只使用高效网络数据缓存功能。</p>
+</li>
+<li><p>不用表，不需要对数据进行关联</p>
+</li>
+<li><p>数据库的工作模式按存储方式可分为：<strong>硬盘数据库和内存数据库</strong>。Redis 将数据储存在内存里面，读写数据的时候都不会受到硬盘 I/O 速度的限制，<strong>所以速度极快</strong>。</p>
+</li>
+</ul>
+<p><strong>比较</strong>：速度不比采用<strong>单进程多线程</strong>的同样<strong>基于内存的 KV 数据库</strong> Memcached 差！</p>
+<h2 id="为什么快？"><a href="#为什么快？" class="headerlink" title="为什么快？"></a>为什么快？</h2><ol>
+<li>基于<strong>内存的</strong>，大部分操作都是在内存中。</li>
+<li><strong>数据结构简单</strong>，对数据操作也简单</li>
+<li>采用<strong>单线程</strong>，避免了不必要的<strong>上下文切换和竞争条件</strong>；无多线程，避免了<strong>线程切换</strong>而消耗 CPU；无锁，不存在<strong>加锁释放锁操作</strong>，<strong>无死锁</strong>消耗。</li>
+<li>多路I/O复用模型，非阻塞IO；<blockquote>
+<p>多路I/O复用模型是利用 <strong>select、poll、epoll 可以同时监察多个流的 I/O 事件</strong>的能力，在<strong>空闲</strong>的时候，会把<strong>当前线程阻塞掉</strong>，当有一个或多个流有 I/O 事件时，就从阻塞态中唤醒，于是程序就会轮询一遍所有的流（<strong>epoll 是只轮询那些真正发出了事件的流</strong>），并且只依次顺序的处理就绪的流，这种做法就<strong>避免了大量的无用操作</strong>。</p>
+</blockquote>
+</li>
+<li>使用<strong>底层模型</strong>不同，它们之间底层实现方式以及与客户端之间通<strong>信的应用协议</strong>不一样，Redis直接自己构建了<strong>VM机制</strong>，因为一般的系统<strong>调用系统函数</strong>的话，<strong>会浪费一定的时间去移动和请求</strong>；</li>
+</ol>
+<p><strong>多路服用</strong>：“多路”指的是<strong>多个网络连接</strong>，“复用”指的是<strong>复用同一个线程</strong>。采用多路 I/O 复用技术可以让单个线程高效的处理多个连接请求（尽量<strong>减少网络 IO 的时间消耗</strong>），且 Redis 在内存中操作数据的速度非常快，也就是说内存内的操作不会成为影响Redis性能的瓶颈，主要由以上几点造就了 Redis 具有很高的吞吐量。</p>
+<p><strong>为什么用单线程</strong>：因为Redis是基于内存的操作，<strong>CPU不是Redis的瓶颈</strong>，Redis的瓶颈最有可能是机器内存的大小或者网络带宽。既然单线程容易实现，而且CPU不会成为瓶颈。</p>
+<p>多核CPU不是浪费了？ 可以开多个redis配合使用，新版本也有写情况可以使用多线程。 避免耗时操作，影响redis的并发能力。</p>
+<p><strong>扩展</strong>：<br>1、单进程多线程模型：MySQL、Memcached、Oracle（Windows版本）；</p>
+<p>2、多进程模型：Oracle（Linux版本）；</p>
+<p>3、Nginx有两类进程，一类称为Master进程(相当于管理进程)，另一类称为Worker进程（实际工作进程）。启动方式有两种：</p>
+<p>（1）单进程启动：仅有一个进程，充当Master进程，也充当Worker进程的角色。</p>
+<p>（2）多进程启动：有且仅有一个Master进程，至少有一个Worker进程工作。</p>
+<p>Master进程主要进行一些全局性的初始化工作和管理Worker的工作；事件处理是在Worker中进行的。</p>
+<h2 id="哪些数据结构"><a href="#哪些数据结构" class="headerlink" title="哪些数据结构"></a>哪些数据结构</h2><ol>
+<li><strong>字符串（String）</strong></li>
+<li><strong>散列（Hash）</strong></li>
+<li><strong>列表（List）</strong></li>
+<li><strong>集合（Set）</strong></li>
+<li><strong>有序集合</strong>（Sorted Set或者是<strong>ZSet</strong>）与范围查询</li>
+<li>Bitmaps</li>
+<li>Hyperloglogs</li>
+<li>地理空间（Geospatial）索引半径查询</li>
+</ol>
+<h2 id="持久化"><a href="#持久化" class="headerlink" title="持久化"></a>持久化</h2><p><strong>RDB持久化</strong>——可以在指定的<strong>时间间隔</strong>内生成数据集的时间点<strong>快照</strong>（point-in-time snapshot）</p>
+<ul>
+<li>RDB优点：<ol>
+<li>文件紧凑，保存了某个时间点上的数据仅，<strong>适合用于备份</strong>。</li>
+<li>回合灾难恢复，它只有一个文件，可以加密后放到别的数据中心。</li>
+<li>可以最大化redis的性能，在保存RDB文件时只需要fork一个子进程，让它负责处理就行，父进程无需执行任何I、O操作。</li>
+<li>在恢复<strong>大数据集</strong>速度比AOF快。</li>
+</ol>
+</li>
+<li>RDB缺点：<ol>
+<li>出故障停机，会丢几分钟数据（需要保存整个数据集状态，消耗大，肯定会有间隔去进行保存）</li>
+<li>fork子进程在数据集庞大，cpu时间紧张时，可能会比较耗时，这期间会停止处理客户端。AOF也会，但是持久性更好。</li>
+</ol>
+</li>
+</ul>
+<p><strong>AOF持久化</strong>——<strong>记录</strong>服务器执行的所有<strong>写操作</strong>命令，并在服务器启动时，通过<strong>重新执行这些命令</strong>来还原数据集。 以 Redis协议的格式来保存，新命令会被追加到文件的末尾。 </p>
+<blockquote>
+<p>Redis 还可以在<strong>后台对AOF文件</strong>进行<strong>重写</strong>（rewrite），使得 AOF 文件的<strong>体积不会超出</strong>保存数据集状态所需的实际大小。</p>
+</blockquote>
+<ul>
+<li>AOF优点<ol>
+<li>让redis更耐久。fsync设置为一秒，也能保持良好性能，出故障也就丢失1秒数据，还可以设置无fsync。</li>
+<li>AOF文件是只进行追加操作的日志文件，中途停机，没写完整，也可以用redis-check-aof轻易修复</li>
+<li>可以重写AOF，缩小体积，优化不错。</li>
+<li>有序保存了对数据库执行的所有写入操作，很容易读懂，对文件分析很方便。导出也方便。</li>
+</ol>
+</li>
+<li>AOF缺点<ol>
+<li>AOF体积大于RDB。</li>
+<li>采用fsync时，速度可能慢于AOF，处理巨大数据载入时，RDB可以提供更有保证的最大延迟时间。</li>
+<li>有数据没办法恢复的bug？以前？</li>
+</ol>
+</li>
+</ul>
+<p><strong>两种都用</strong>： 当 Redis 重启时， 它会<strong>优先使用AOF</strong>文件来还原数据集， 因为 AOF 文件保存的数据集通常比 RDB 文件所保存的数据集<strong>更完整</strong>.</p>
+<h2 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h2><h2 id="Redis容灾策略"><a href="#Redis容灾策略" class="headerlink" title="Redis容灾策略"></a>Redis容灾策略</h2><p><strong>主从备份+哨兵</strong>： </p>
+<ol>
+<li>采用master-slave方式 </li>
+<li>为了得到好的读写性能，master不做任何的持久化 </li>
+<li>slave同时开启Snapshot和AOF来进行持久化，保证数据的安全性 </li>
+<li>当master挂掉后，修改slave为master </li>
+<li>恢复原master数据，修改原先master为slave，启动slave </li>
+<li>若master与slave都挂掉后，调用命令通过aof和snapshot进行恢复恢复时要先确保恢复文件都正确了，才能启动主库；<blockquote>
+<p>也可以先启动slave，将master与slave对调开源方案<a href="http://navyaijm.blog.51cto.com/4647068/1637688" target="_blank" rel="noopener">codis</a></p>
+</blockquote>
+</li>
+</ol>
+<p><strong>哨兵的作用</strong></p>
+<ol>
+<li>监控：监控主从是否正常</li>
+<li>通知：出现问题时，可以通知相关人员</li>
+<li>故障迁移：自动主从切换</li>
+<li>统一的配置管理：连接者询问sentinel取得主从的地址 </li>
+</ol>
+<p>Raft算法核心: 可视图<br><a href="http://thesecretlivesofdata.com/raft/" target="_blank" rel="noopener">Raft Visualization (算法演示)</a></p>
+<p><a href="http://blog.csdn.net/liuwei063608/article/details/50520163" target="_blank" rel="noopener">使用主从结构+哨兵（sentinel）来进行容灾</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://xdcrazyboy.github.io/2018/08/28/Java基础/Maven学习笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="fengziboboy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="fengziboboy&个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/28/Java基础/Maven学习笔记/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-28T00:00:35+08:00">
+                2018-08-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/28/Java基础/Maven学习笔记/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/08/28/Java基础/Maven学习笔记/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p> 看个视频教程总结的，参考了课程笔记。</p>
+<h2 id="1-什么是maven"><a href="#1-什么是maven" class="headerlink" title="1. 什么是maven"></a>1. 什么是maven</h2><p>Maven是基于POM（工程对象模型），通过一小段描述来对项目的代码、报告、文件进管理的工具。</p>
+<p>Maven是一个跨平台的项目管理工具，它是使用java开发的，它要依赖于jdk1.6及以上.</p>
+<p>Maven主要有两大功能：管理依赖、项目构建。依赖指的就是jar包。</p>
+<p> <strong>核心概念</strong></p>
+<ol>
+<li>坐标</li>
+<li>依赖管理</li>
+<li>生命周期</li>
+<li>插件</li>
+<li>继承</li>
+<li>聚合</li>
+</ol>
+<h2 id="2-与其他工具的比较"><a href="#2-与其他工具的比较" class="headerlink" title="2. 与其他工具的比较"></a>2. 与其他工具的比较</h2><h3 id="Eclipse"><a href="#Eclipse" class="headerlink" title="Eclipse"></a>Eclipse</h3><p>使用eclipse进行项目<strong>构建</strong>，相对来说，步骤<strong>比较零散，不好操作</strong></p>
+<h3 id="Ant"><a href="#Ant" class="headerlink" title="Ant"></a>Ant</h3><p>它是一个专门的项目<strong>构建</strong>工具，它可以通过一些配置来完成项目构建，这些配置要明确的告诉ant，源码包在哪？目标class文件应该存放在哪？资源文件应该在哪.<strong>麻烦</strong></p>
+<h3 id="Maven"><a href="#Maven" class="headerlink" title="Maven"></a>Maven</h3><p>它是一个项目<strong>管理</strong>工具，他也是一个项目构建工具，通过使用maven，可以对项目进行快速简单的构建，它不需要告诉maven很多信息，但是需要安装maven去的规范去进行代码的开发。也就是说maven是有约束的。项目构建：编译、打包、部署.</p>
+<h2 id="3-安装Maven"><a href="#3-安装Maven" class="headerlink" title="3. 安装Maven"></a>3. 安装Maven</h2><ol>
+<li>官网下载：<a href="http://maven.apache.org" target="_blank" rel="noopener">http://maven.apache.org</a></li>
+<li>直接解压，然后配置path路径。</li>
+<li>cmd-》执行 mvn -v。显示正常则安装成功。</li>
+</ol>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p><strong>全局配置</strong>：在maven安装目录的conf里面有一个settings.xml文件，这个文件就是maven的全局配置文件。默认在系统的用户目录下的m2/repository中，该目录是本地仓库的目录。</p>
+<p><strong>用户配置</strong>：用户配置文件的地址：~/.m2/settings.xml，该文件默认是没有，需要将全局配置文件拷贝一份到该目录下。 建议：改成自己的项目专有仓库。</p>
+<h2 id="4-创建Maven工程"><a href="#4-创建Maven工程" class="headerlink" title="4. 创建Maven工程"></a>4. 创建Maven工程</h2><p>Project: Maven工程结构</p>
+<ul>
+<li>src<ul>
+<li>|-main<blockquote>
+<p>-java        —— 存放项目的.java文件<br>-resources   —— 存放项目资源文件，如spring, hibernate配置文件</p>
+</blockquote>
+</li>
+<li>-test<blockquote>
+<p>-java        ——存放所有测试.java文件，如JUnit测试类<br>-resources   —— 测试资源文件</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>target              —— 目标文件输出位置例如.class、.jar、.war文件</li>
+<li>pom.xml             ——maven项目核心配置文件</li>
+</ul>
+<p>手动创建maven工程结构个个目录，Hello.java  TestHello.java; pom.xml文件自动构建，也可以复制。</p>
+<h3 id="Maven命令的使用"><a href="#Maven命令的使用" class="headerlink" title="Maven命令的使用"></a>Maven命令的使用</h3><p>Maven的命令要在pom.xml所在目录中去执行</p>
+<ul>
+<li>mvn compile  – 编译</li>
+<li>mvn clean  – 清除命令，清除已经编译好的class文件，具体说清除的是target整个目录</li>
+<li>mvn test – 测试命令，该命令会将test目录中的源码进行编译</li>
+<li>mvn package – 打包</li>
+<li>mvn install –安装命令，会将打好的包，安装到本地仓库</li>
+</ul>
+<p>还可以有组合命令：</p>
+<ul>
+<li>mvn clean compile</li>
+<li>mvn clean install</li>
+<li>….</li>
+</ul>
+<h2 id="5-M2Eclipse-（插件，如果用idea可以忽略）"><a href="#5-M2Eclipse-（插件，如果用idea可以忽略）" class="headerlink" title="5. M2Eclipse （插件，如果用idea可以忽略）"></a>5. M2Eclipse （插件，如果用idea可以忽略）</h2><p>如何查看是否安装成功？ -&gt; window-&gt; preference-&gt;maven-&gt; Install -&gt;改成本地的maven</p>
+<p>可以修改用户配置文件的默认位置。 maven-&gt; User Setting</p>
+<h2 id="6-Maven的核心概念"><a href="#6-Maven的核心概念" class="headerlink" title="6. Maven的核心概念"></a>6. Maven的核心概念</h2><h3 id="坐标"><a href="#坐标" class="headerlink" title="坐标"></a>坐标</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependencies&gt;</span><br><span class="line">	&lt;dependency&gt;</span><br><span class="line">		&lt;groupId&gt;junit&lt;/groupId&gt;</span><br><span class="line">		&lt;artifactId&gt;junit&lt;/artifactId&gt;</span><br><span class="line">		&lt;version&gt;4.10&lt;/version&gt;</span><br><span class="line">		&lt;scope&gt;test&lt;/scope&gt;</span><br><span class="line">	&lt;/dependency&gt;	</span><br><span class="line">&lt;/dependencies&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>目的： 为了定位一个唯一确定的jar包。<br>主要组成： </p>
+<ul>
+<li>groupId  定义当前Maven组织名称</li>
+<li>artifactId  定义实际项目名称</li>
+<li>version  定义当前项目的当前版本</li>
+</ul>
+</blockquote>
+<h3 id="依赖管理"><a href="#依赖管理" class="headerlink" title="依赖管理"></a>依赖管理</h3><p><strong>依赖范围</strong>： scope 用于控制依赖和编译、测试、运行的classpath的关系。主要有三种：</p>
+<ul>
+<li>compile: 默认。 编译、测试、运行时，classpath都有效。</li>
+<li>test: 测试有效</li>
+<li>provide: 编译、测试。 </li>
+<li>runtime: 运行时提供。 例如： jdbc 驱动</li>
+</ul>
+<p><strong>依赖传递</strong></p>
+<p><em>范围区别</em> ：</p>
+<ul>
+<li>当第二直接依赖范围是compile时，可正常传递； </li>
+<li>第二是test时，不传递； </li>
+<li>…provided时，只传递为第一直接依赖范围为provided的依赖，且传递性范围同样为provided； </li>
+<li>…runtime，传递范围与第一直接依赖一致，compile例外，此时传递范围为runtime。 </li>
+</ul>
+<p><strong>依赖冲突</strong></p>
+<ul>
+<li>跨pom文件的冲突：  就近原则-依赖最直接最近的。</li>
+<li>同一个pom文件的冲突：  就近原则-越下面的越近。</li>
+</ul>
+<p><strong>可选依赖</strong></p>
+<p>Optional标签表示：该依赖是否可选。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;optinal&gt;true&lt;/optional&gt;    //默认为false：该依赖会传递下去；  true： 该依赖不会传递下去</span><br></pre></td></tr></table></figure></p>
+<p><strong>排除依赖</strong><br>Exclusions标签：可以排除依赖。 在引入first.jar 时，可添加此标签，标注 排除掉first.jar传递过来的某个依赖。</p>
+<h3 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h3><p>项目构建的步骤集合： clean生命周期，default生命周期，site生命周期。</p>
+<p>生命周期由多个阶段（Phase）组成。</p>
+<p><strong>Clean 生命周期</strong></p>
+<ul>
+<li>pre-clean  -  执行一些需要在clean之前完成的工作</li>
+<li>clean  -  移出所有上一次构建生成的文件</li>
+<li>post-clean  -  执行一些需要在clean之后立刻完成的工作</li>
+</ul>
+<p>mvn post-clean 该命令会自动执行对应什么周期 前面的命令 pre-clean clean .简化命令输入</p>
+<p><strong>Default 生命周期（重点）</strong></p>
+<ul>
+<li>validate </li>
+<li>generate-sources </li>
+<li>process-sources </li>
+<li>generate-resources </li>
+<li>process-resources 复制并处理资源文件，至目标目录，准备打包。 </li>
+<li><strong>compile</strong> 编译项目的源代码。 </li>
+<li>process-classes </li>
+<li>generate-test-sources </li>
+<li>process-test-sources </li>
+<li>generate-test-resources </li>
+<li>process-test-resources 复制并处理资源文件，至目标测试目录。</li>
+<li>test-compile 编译测试源代码。 </li>
+<li>process-test-classes </li>
+<li><strong>test</strong> 使用合适的单元测试框架运行测试。这些测试代码不会被打包或部署。</li>
+<li>prepare-package </li>
+<li><strong>package</strong> 接受编译好的代码，打包成可发布的格式，如 JAR 。 </li>
+<li>pre-integration-test </li>
+<li>integration-test </li>
+<li>post-integration-test </li>
+<li>verify </li>
+<li><strong>install</strong> 将包安装至本地仓库，以让其它项目依赖。 </li>
+<li><strong>deploy</strong> 将最终的包复制到远程的仓库，以让其它开发人员与项目共享。</li>
+</ul>
+<p><strong>运行任何一个阶段的时候，它前面的所有阶段都会被运行</strong>，这也就是为什么我们运行mvn install 的时候，代码会被编译，测试，打包。此外，Maven的插件机制是完全依赖Maven的生命周期的，因此理解生命周期至关重要。</p>
+<p><strong>Site生命周期</strong>-生成项目站点</p>
+<ul>
+<li>pre-site  -  执行一些需要在生成站点文档之前完成的工作 </li>
+<li>site  -  生成项目的站点文档 </li>
+<li>post-site  -  执行一些需要在生成站点文档之后完成的工作，并且为部署做准备 </li>
+<li>site-deploy  -  将生成的站点文档部署到特定的服务器上 </li>
+</ul>
+<p>用以生成和发布Maven站点，文档及统计数据自动生成</p>
+<h3 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h3><p>Maven的核心仅仅定义了抽象的生命周期，具体的任务都是交由插件完成的。每个插件都能实现一个功能，每个功能就是一个插件目标。Maven的生命周期与插件目标相互绑定，以完成某个具体的构建任务。</p>
+<blockquote>
+<p>例如compile就是插件maven-compiler-plugin的一个插件目标</p>
+</blockquote>
+<p><strong>编译插件</strong><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;build&gt;</span><br><span class="line">    &lt;plugin&gt;</span><br><span class="line">        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;</span><br><span class="line">        &lt;configuration&gt;</span><br><span class="line">            &lt;source&gt;1.7&lt;/source&gt;</span><br><span class="line">            &lt;target&gt;1.7&lt;/target&gt;</span><br><span class="line">            &lt;encoding&gt;UTF-8&lt;/encoding&gt;</span><br><span class="line">        &lt;/configuration&gt;</span><br><span class="line">    &lt;/plugin&gt;</span><br><span class="line">&lt;/build&gt;</span><br></pre></td></tr></table></figure></p>
+<p>修改配置文件后，在工程上点击右键选择maven→update project configration</p>
+<p><strong>Tomcat插件</strong><br>如果使用maven的tomcat插件的话，那么本地则不需要安装tomcat。</p>
+<ol>
+<li>创建一个maven工程</li>
+<li>选择打包方式为 war 才能创建web工程</li>
+<li>web-app下创建WEB-INF（及它里面的web.xml）和index.jsp</li>
+</ol>
+<p>使用tomcat插件运行web工程</p>
+<ol>
+<li>run as -&gt; build -&gt; tomcat:run </li>
+<li>可以换默认的tomcat版本，通过pom.xml添加build-plugin。<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;plugin&gt;</span><br><span class="line">	&lt;!-- 配置插件 --&gt;</span><br><span class="line">	&lt;groupId&gt;org.apache.tomcat.maven&lt;/groupId&gt;</span><br><span class="line">	&lt;artifactId&gt;tomcat7-maven-plugin&lt;/artifactId&gt;</span><br><span class="line">	&lt;configuration&gt;</span><br><span class="line">		&lt;port&gt;8080&lt;/port&gt;</span><br><span class="line">		&lt;path&gt;/&lt;/path&gt;</span><br><span class="line">	&lt;/configuration&gt;</span><br><span class="line">&lt;/plugin&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><p>指pom文件的继承</p>
+<ol>
+<li>创建父工程：不用模板，选择打包方式必须为pom方式。</li>
+<li>创建子工程：创新工程、修改老工程。 选择打包方式界面-下方-Parent Project处添加父工程。</li>
+</ol>
+<p>结果就是：</p>
+<blockquote>
+<p>子工程pom文件多了\<parent>\</parent>标签。（修改老工程其实就是直接修改其pom文件：增加此标签，指定老工程的父工程）</p>
+</blockquote>
+<p>作用：</p>
+<blockquote>
+<p>父工程统一依赖jar包：在父工程中对jar包进行依赖，在子工程中都会继承此依赖。</p>
+</blockquote>
+<p><strong>父工程统一管理版本号</strong></p>
+<p>jar包依赖太多了，每个要写一个dependency很冗余，于是：</p>
+<ol>
+<li><p>Maven使用dependencyManagement管理依赖的版本号。<br>注意：此处只是定义依赖jar包的版本号，并不实际依赖。如果子工程中需要依赖jar包还需要添加dependency节点。</p>
+<blockquote>
+<p>父工程：\<dependencymanagement> \<dependencymanagement><br>子工程：需要依赖的话自己定义\<dependency>，但是直接使用父类的版本号，自己不用指定version。</dependency></dependencymanagement></dependencymanagement></p>
+</blockquote>
+</li>
+<li><p>父工程抽取版本号<br>父工程统一管理依赖后，会有很多，所以对版本号抽象出来，单独定义，方便修改管理。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;properties&gt;</span><br><span class="line">	&lt;junit.version&gt;4.9&lt;/junit.version&gt;</span><br><span class="line">&lt;/properties&gt;</span><br><span class="line"></span><br><span class="line">&lt;dependencyManagement&gt;</span><br><span class="line">	&lt;dependencies&gt;</span><br><span class="line">		&lt;dependency&gt;</span><br><span class="line">			&lt;groupId&gt;junit&lt;/groupId&gt;</span><br><span class="line">			&lt;artifactId&gt;junit&lt;/artifactId&gt;</span><br><span class="line">			&lt;version&gt;$&#123;junit.version&#125;&lt;/version&gt;</span><br><span class="line">		&lt;/dependency&gt;</span><br><span class="line">	&lt;/dependencies&gt;</span><br><span class="line">&lt;/dependencyManagement&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="聚合"><a href="#聚合" class="headerlink" title="聚合"></a>聚合</h3><p>聚合工程的多个模块。例如：电商项目中，包括商品模块、订单模块、用户模块等。就可以对不同的模块单独创建工程，最终在打包时，将不同的模块聚合到一起。</p>
+<p>例如同一个项目中的表现层、业务层、持久层，也可以分层创建不同的工程，最后打包运行时，再聚合到一起。</p>
+<ol>
+<li>创建一个聚合工程，聚合工程的<strong>打包方式也必须为pom</strong>。 </li>
+<li>创建持久层，在聚合工程上右键，创建Maven Module，然后就取名字，其他比如打包方式默认jar。会自动把聚合工程当做父类。</li>
+<li>创建业务层。同持久层一样，jar。</li>
+<li>创建表现层，<strong>打包方式选择war</strong>.</li>
+<li>然后修改父工程的pom文件，对父工程进行 tomcat7:run 运行。</li>
+</ol>
+<h2 id="7-Maven仓库管理"><a href="#7-Maven仓库管理" class="headerlink" title="7. Maven仓库管理"></a>7. Maven仓库管理</h2><p><strong>Maven仓库</strong>：用来统一存储所有Maven共享构建的位置就是仓库。根据Maven坐标定义每个构建在仓库中唯一存储路径大致为：groupId/artifactId/version/artifactId-version.packaging。</p>
+<p><strong>仓库分类</strong></p>
+<ol>
+<li>本地仓库<blockquote>
+<p>默认在~/.m2/repository. 若用户自己配置了，就以配置的地址为准</p>
+</blockquote>
+</li>
+<li>远程仓库<ul>
+<li><a href="http://repo1.maven.org/maven2" target="_blank" rel="noopener">中央仓库</a>（不包含有版权的jar包）</li>
+<li>私服:是一种特殊的远程仓库，它是架设在局域网内的仓库.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Maven私服</strong></p>
+<ol>
+<li><strong>安装Nexus</strong></li>
+</ol>
+<blockquote>
+<p>为所有来自中央仓库的构建安装提供本地缓存。<br>下载网站：<a href="http://nexus.sonatype.org/" target="_blank" rel="noopener">http://nexus.sonatype.org/</a> （war包最近的似乎没了，自己百度下）</p>
+<ul>
+<li>第一步：将下载的nexus的war包复制到tomcat下的webapps目录。</li>
+<li>第二步：启动tomcat。nexus将在c盘创建sonatype-work目录【C:\Users\当前用户\sonatype-work\nexus】。</li>
+</ul>
+</blockquote>
+<ol start="2">
+<li><p><strong>Nexus的本地目录</strong><br>目录不复杂，暂略。</p>
+</li>
+<li><p><strong>访问Nexus</strong></p>
+<blockquote>
+<p>访问URL: <a href="http://localhost:8080/nexus-版本号/" target="_blank" rel="noopener">http://localhost:8080/nexus-版本号/</a><br>默认账号:<br>用户名： admin<br>密码： admin123</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>仓库有四种类型</strong></p>
+<ul>
+<li>group(仓库组)：一组仓库的集合</li>
+<li>hosted(宿主)：配置第三方仓库 （包括公司内部私服 ） </li>
+<li>proxy(代理)：私服会对中央仓库进行代理，用户连接私服，私服自动去中央仓库下载jar包或者插件 </li>
+<li>virtual(虚拟)：兼容Maven1 版本的jar或者插件</li>
+</ul>
+<p><strong>Nexus的仓库和仓库组介绍</strong></p>
+<ul>
+<li>3rd party: 一个策略为Release的宿主类型仓库，用来部署无法从公共仓库获得的第三方发布版本构建</li>
+<li>Apache Snapshots: 一个策略为Snapshot的代理仓库，用来代理Apache Maven仓库的快照版本构建</li>
+<li>Central: 代理Maven中央仓库</li>
+<li>Central M1 shadow: 代理Maven1 版本 中央仓库</li>
+<li>Codehaus Snapshots: 一个策略为Snapshot的代理仓库，用来代理Codehaus Maven仓库的快照版本构件</li>
+<li>Releases: 一个策略为Release的宿主类型仓库，用来部署组织内部的发布版本构件</li>
+<li>Snapshots: 一个策略为Snapshot的宿主类型仓库，用来部署组织内部的快照版本构件</li>
+<li>Public Repositories:该仓库组将上述所有策略为Release的仓库聚合并通过一致的地址提供服务</li>
+</ul>
+<ol start="5">
+<li><strong> 配置所有构建均从私服下载</strong></li>
+</ol>
+<p>在本地仓库的setting.xml中配置如下：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;mirrors&gt;</span><br><span class="line">	 &lt;mirror&gt;</span><br><span class="line">		 &lt;!--此处配置所有的构建均从私有仓库中下载 *代表所有，也可以写central --&gt;</span><br><span class="line">		 &lt;id&gt;nexus&lt;/id&gt;</span><br><span class="line">		 &lt;mirrorOf&gt;*&lt;/mirrorOf&gt;</span><br><span class="line">		 &lt;url&gt;http:<span class="comment">//localhost:8080/nexus-2.7.0-06/content/groups/public/&lt;/url&gt;</span></span><br><span class="line">	 &lt;/mirror&gt;</span><br><span class="line"> &lt;/mirrors&gt;</span><br></pre></td></tr></table></figure></p>
+<ol start="6">
+<li><strong>部署构建到Nexus</strong></li>
+</ol>
+<ul>
+<li><p>第一步：Nexus的访问权限控制.在本地仓库的setting.xml中配置如下：</p>
+   <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">   &lt;server&gt;</span><br><span class="line">		&lt;id&gt;releases&lt;/id&gt;</span><br><span class="line">	&lt;username&gt;admin&lt;/username&gt;</span><br><span class="line">	&lt;password&gt;admin123&lt;/password&gt;</span><br><span class="line">&lt;/server&gt;</span><br><span class="line">&lt;server&gt;</span><br><span class="line">	&lt;id&gt;snapshots&lt;/id&gt;</span><br><span class="line">	&lt;username&gt;admin&lt;/username&gt;</span><br><span class="line">	&lt;password&gt;admin123&lt;/password&gt;</span><br><span class="line">&lt;/server&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>第二步：配置pom文件.在需要构建的项目中修改pom文件:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;distributionManagement&gt;</span><br><span class="line">        &lt;!-- 正式版本发布位置地址 --&gt;</span><br><span class="line">		&lt;repository&gt;</span><br><span class="line">			&lt;id&gt;releases&lt;/id&gt;</span><br><span class="line">			&lt;name&gt;Internal Releases&lt;/name&gt;</span><br><span class="line">			&lt;url&gt;http:<span class="comment">//localhost:8080/nexus-2.7.0-06/content/repositories/releases/&lt;/url&gt;</span></span><br><span class="line">		&lt;/repository&gt;</span><br><span class="line">        &lt;!-- 快照版本发布位置地址 --&gt;</span><br><span class="line">		&lt;snapshotRepository&gt;</span><br><span class="line">			&lt;id&gt;snapshots&lt;/id&gt;</span><br><span class="line">			&lt;name&gt;Internal Snapshots&lt;/name&gt;</span><br><span class="line">			&lt;url&gt;http:<span class="comment">//localhost:8080/nexus-2.7.0-06/content/repositories/snapshots/&lt;/url&gt;</span></span><br><span class="line">		&lt;/snapshotRepository&gt;</span><br><span class="line">	&lt;/distributionManagement&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>第三步：执行maven的deploy命令. mvn deploy</p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://xdcrazyboy.github.io/2018/08/28/Java基础/README/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="fengziboboy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="fengziboboy&个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/28/Java基础/README/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-28T00:00:35+08:00">
+                2018-08-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/28/Java基础/README/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/08/28/Java基础/README/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Java面试之路"><a href="#Java面试之路" class="headerlink" title="Java面试之路"></a>Java面试之路</h1><p>没有什么顺序，纯粹是给自己做的一个笔记，大部分是在巨人肩膀上汇总。</p>
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p>参考了很多大牛的文章或者书，需要放在最显眼的位置。</p>
+<p>另外由于收集得太多，很多都忘记出处，如果谁发现有自己的或者哪位大神的内容被我参考了，请直接在评论处贴链接，我把它们放到这里：</p>
+<ol>
+<li>《MySQL DBA 修炼之道》</li>
+<li><a href="www.runoob.com/w3cnote/mysql-index.html">MySQL索引优化全攻略（菜鸟）</a></li>
+<li><a href="https://www.cnblogs.com/yyjie/p/7486975.html" target="_blank" rel="noopener">mysql性能优化之索引优化</a>，这博客写得挺好。</li>
+<li><a href="https://blog.csdn.net/buhuikanjian/article/details/53105416" target="_blank" rel="noopener">数据库–视图的基本概念以及作用</a></li>
+<li>《Java网络编程》Elliotte Rusty Harold著</li>
+</ol>
+<h1 id="MySQL（数据库相关）"><a href="#MySQL（数据库相关）" class="headerlink" title="MySQL（数据库相关）"></a>MySQL（数据库相关）</h1><h2 id="MySQL的优点"><a href="#MySQL的优点" class="headerlink" title="MySQL的优点"></a>MySQL的优点</h2><ul>
+<li>开源免费又高效</li>
+<li>良好的安全连接，自带查询解析、sql语句优化</li>
+<li>使用读写锁（细化到行）</li>
+<li>事物隔离和多版本并发控制提高并发</li>
+<li>完备的事务日志记录</li>
+<li>强大的存储引擎提供高效查询（表记录可达百万级）</li>
+<li>如果是InnoDB，还可在崩溃后进行完整的恢复</li>
+</ul>
+<h2 id="事务处理"><a href="#事务处理" class="headerlink" title="事务处理"></a>事务处理</h2><p><strong>事务</strong>：恢复和并发控制的<strong>基本单位</strong>，四个特性（ACID酸性）：</p>
+<ol>
+<li><strong>原子性</strong>（Atomicity）：不可拆分，要么做（提交）要么不做（回滚）；MySQL通过<strong>redo log</strong>重做日志实现原子性。<blockquote>
+<p>在执行SQL语句前，会先写入redo log <strong>buffer</strong>，再执行SQL语句；如果语句执行出错就会根据redo log buffer中的记录执行回滚。</p>
+</blockquote>
+</li>
+</ol>
+<ol start="2">
+<li><strong>一致性</strong>（Consistency）：事务应确保数据库的状态从一个<strong>一致性状态</strong>转变为另一个一致性状态。一致性状态的含义是：数据库中的数据<strong>应满足约束</strong>。通过<strong>undo log</strong>实现一致性。<blockquote>
+<p>在写入redo log buffer之前会写入undo log。undo log是<strong>逻辑日志</strong>，会根据之前的SQL语句进行相应回滚，比如之前是insert，回滚就是delete。 除了回滚，undo还有一个作用是MVCC，通过undo实现<strong>非锁定读取</strong>。 并且undo log也会产生redo log,因为undolog也需要持久性保护。</p>
+</blockquote>
+</li>
+</ol>
+<ol start="3">
+<li><p><strong>隔离性</strong>（Isolation）：多个事务并行执行时，一个事务的执行不应影响其他事务的执行。四种隔离级别，隔离级别越高，越能保证数据的完整性和一致性，性能也越差。解决四种问题：</p>
+<blockquote>
+<ol>
+<li>丢失更新 -&gt; Read Uncommitted 事务可以看到其他事务更改但未提交的数据，依旧存在脏读问题，几乎没什么用。</li>
+<li>脏读 -&gt; Read Committed 事务可以看到它执行的时候，其他事务已经提交的数据，解决了（不允许）脏读，允许不可重复读，没办法实现可重复读。</li>
+<li>不可重复读 -&gt; Repeatable Read （解决包括前面所有1,2,3,）<br>同一个事务内，同一个查询请求多次执行，则获取的记录集是相同的（也就是实现了可重复读，这个需要保留旧的行版本），但不能杜绝幻读。</li>
+<li>幻读 -&gt; Serializable (解决包括前面所有)，它将锁施加在所有访问的数据上。</li>
+</ol>
+</blockquote>
+</li>
+<li><p><strong>持久性</strong>（Durability）：一旦事务提交，则所做的修改就会永久保存到数据库。 即便系统崩溃，修改的数据也不会丢失。实现原理：</p>
+<blockquote>
+<p>在事务commit之前会将，redo log buffer中的数据持久化到硬盘中的redo log file，这样在commit的时候，硬盘中就已经有修改后的数据了</p>
+</blockquote>
+</li>
+</ol>
+<blockquote>
+<p>Innodb下也解决幻读 ?<br>MySQL InnoDB的可重复读并不保证避免幻读，需要应用使用加锁读来保证。而这个加锁度使用到的机制就是next-key locks。</p>
+</blockquote>
+<p><strong>纯undo log-》 redo/undo log</strong></p>
+<ol>
+<li>单纯的undo保证了原子性和持久性，需要事务提交之前将undo buffer数据写入磁盘undo（磁盘），<strong>浪费大量I/O</strong></li>
+<li>引入redo log记录数据修改后的值，可以避免数据在事务提交之前必须写入磁盘的要求，<strong>减少I/O</strong></li>
+</ol>
+<p>这两者就是为了保证原子性和持久性。单纯的undo log需要两次I/O.</p>
+<p><strong>MyISAM引擎不支持事务，只有InnoDB（默认隔离级别：repetable read）或者Falcon</strong></p>
+<h3 id="MVCC"><a href="#MVCC" class="headerlink" title="MVCC"></a><strong>MVCC</strong></h3><p> 全称：多版本并发控制。InnoDB有。 实现查询一些<strong>正在被另外事务更新的行</strong>，可以看到它们被更新之前的值。 这样查询就不用等待另一个事务释放锁。</p>
+<ol>
+<li>给每行增加两个隐藏字段来实现MVCC，一个用来记录<strong>数据行创建时间</strong>，另一个用来记录<strong>行的过期(删除)时间</strong>.（实际操作中，存储的不是时间，而是事务的版本号）</li>
+<li>快照读：读取的是历史版本，普通的SELECT操作就是快照读。 当前读：读取的是最新版本。</li>
+</ol>
+<h3 id="锁"><a href="#锁" class="headerlink" title="锁"></a>锁</h3><ol>
+<li>Record Locks（记录锁）：在索引记录上加锁。</li>
+<li>Gap Locks（间隙锁）：在索引记录之间加锁，或者在第一个索引记录之前，或者在最后一个索引记录之后。</li>
+<li>Next-Key Locks：上面两者结合，都加锁。</li>
+</ol>
+<ul>
+<li>利用MVCC实现一致性非锁定读，保证了可重复读</li>
+</ul>
+<h3 id="悲观锁和乐观锁"><a href="#悲观锁和乐观锁" class="headerlink" title="悲观锁和乐观锁"></a>悲观锁和乐观锁</h3><p><strong>悲观锁</strong>：老认为别人会修改它所要操作的数据，实现依靠数据库底层。在数据进行提交更新的时候，才会正式对数据的冲突与否进行检测。</p>
+<p><strong>乐观锁</strong>：相反。只有在提交更新的时候去检查数据的状态。通常是给数据增加一个字段来标识数据的版本。</p>
+<h2 id="索引优化"><a href="#索引优化" class="headerlink" title="索引优化"></a>索引优化</h2><h3 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h3><p>为特定的mysql字段进行一些特定的算法排序，比如二叉树的算法和哈希算法，优化查询速度。 </p>
+<ul>
+<li>Explain优化查询检测 可自动分析语句，提前结束搜索。</li>
+<li></li>
+</ul>
+<h2 id="创建索引的技巧"><a href="#创建索引的技巧" class="headerlink" title="创建索引的技巧"></a>创建索引的技巧</h2><ol>
+<li>维度高的列创建索引</li>
+<li>数据列中不重复的值出现的个数越高，维度越高。（比如性别这种就不适合建立索引）</li>
+<li>对where，on,group by,order by中出现的列建立索引</li>
+<li>对较长的字符串使用前缀索引</li>
+<li>不要过多创建索引，这会增加额外的磁盘空间，对于DML操作的速度影响很大，因为每增删一次都要从新建立索引。</li>
+<li>使用组合索引，可以减少文件索引大小，在使用速度要由于多个单列索引。</li>
+</ol>
+<h2 id="组合索引和前缀索引-（索引技巧不是类型）"><a href="#组合索引和前缀索引-（索引技巧不是类型）" class="headerlink" title="组合索引和前缀索引 （索引技巧不是类型）"></a>组合索引和前缀索引 （索引技巧不是类型）</h2><h2 id="避免写出一些不走索引的sql"><a href="#避免写出一些不走索引的sql" class="headerlink" title="避免写出一些不走索引的sql"></a>避免写出一些不走索引的sql</h2><ul>
+<li><code>where &#39;age&#39;+10=30;</code>–所有索引列参与了计算</li>
+<li><code>where left(&#39;data&#39;.4) &lt; 1990;</code>–同上</li>
+<li><code>like &quot;%你好%&quot;</code> – 不走索引  <code>like &quot;你好%&quot;</code> –走索引</li>
+<li>正则表达式不走索引</li>
+<li>字符串和数字比较不走索引</li>
+<li>如果条件中有<code>or</code>，需要全部条件都建立索引，所以尽量避免用<code>or</code></li>
+<li>如果mysql估计是用全表扫描要比使用索引快，则不使用索引。</li>
+<li>不在索引上做任何操作（计算/函数/类型转换），会导致索引失效</li>
+<li>存储引擎不能使用索引中范围条件右边的列</li>
+<li>不等于（&lt;&gt; 或！=）会变成全表扫描</li>
+<li>is null ,not null也无法使用索引</li>
+<li>字符串不走单引号索引失效</li>
+</ul>
+<h2 id="索引的弊端"><a href="#索引的弊端" class="headerlink" title="索引的弊端"></a>索引的弊端</h2><ul>
+<li>查询操作频繁的列创建索引。因为索引会降低增加、删除、更新操作的速度，因为这些操作后需要对索引文件进行重新排序或更新。 </li>
+<li>不过互联网应用，查询语句远多于DML的语句，所以，一般只要在大批数据要导入的时候，先删除索引，再批量插入数据，最后添加索引。</li>
+</ul>
+<h2 id="数据库视图"><a href="#数据库视图" class="headerlink" title="数据库视图"></a>数据库视图</h2><p><strong>视图（子查询）</strong>：是从一个或多个表导出的虚拟的表，其内容由查询定义。具有普通表的结构，但是不实现数据存储。</p>
+<p><strong>对视图的修改</strong>：单表视图一般用于查询和修改，会改变基本表的数据，</p>
+<p><strong>多表视图</strong>一般用于<strong>查询</strong>，不会改变基本表的数据。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--创建视图--</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">or</span> <span class="keyword">replace</span> <span class="keyword">view</span> v_student <span class="keyword">as</span> <span class="keyword">select</span> * <span class="keyword">from</span> student;</span><br><span class="line"><span class="comment">--从视图中检索数据--</span></span><br><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> v_student;</span><br><span class="line"><span class="comment">--删除视图--</span></span><br><span class="line"><span class="keyword">drop</span> <span class="keyword">view</span> v_student;</span><br></pre></td></tr></table></figure>
+<p><strong>作用：</strong></p>
+<ul>
+<li><p>简化了操作，把经常使用的数据定义为视图。</p>
+</li>
+<li><p>安全性，用户只能查询和修改能看到的数据。</p>
+</li>
+<li><p>逻辑上的独立性，屏蔽了真实表的结构带来的影响。</p>
+</li>
+<li></li>
+</ul>
+<h1 id="JVM-内存、"><a href="#JVM-内存、" class="headerlink" title="JVM(内存、)"></a>JVM(内存、)</h1><h2 id="内存"><a href="#内存" class="headerlink" title="内存"></a>内存</h2><h3 id="Java内存的分配策略"><a href="#Java内存的分配策略" class="headerlink" title="Java内存的分配策略"></a>Java内存的分配策略</h3><p>Java 程序运行时的内存分配策略有三种,分别是<strong>静态分配</strong>,<strong>栈式分配</strong>,和<strong>堆式分配</strong>，对应的，三种存储策略使用的内存空间主要分别是静态存储区（也称方法区）、栈区和堆区。</p>
+<p><strong>静态存储区（方法区）</strong>：主要存放<strong>静态数据</strong>、<strong>全局static数据</strong>和<strong>常量</strong>。这块内存在程序编译时就已经分配好，并且在程序整个运行期间都存在。</p>
+<p><strong>栈区</strong> ：<strong>线程私有</strong>。当方法被执行时，<strong>方法体内的局部变量</strong>（其中包括基础数据类型、<strong>对象的引用</strong>）都在栈上创建，并在方法执行结束时这些局部变量所持有的内存将会<strong>自动被释放</strong>。因为栈内存分配运算内置于处理器的<strong>指令</strong>集中，效率很高，但是分配的内存<strong>容量有限</strong>。</p>
+<p><strong>堆区</strong>： 又称<strong>动态内存分配</strong>，通常就是指在程序运行时直接 new 出来的内存，也就是<strong>对象的实例</strong>。这部分内存在不使用时将会由 Java 垃圾回收器来负责回收。</p>
+<h3 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h3><h4 id="Java虚拟机栈"><a href="#Java虚拟机栈" class="headerlink" title="Java虚拟机栈"></a>Java虚拟机栈</h4><p><strong>线程私有的</strong>，它的生命周期跟线程相同。</p>
+<ul>
+<li>每个方法的调用到完成，其实就是对应一个<strong>栈帧</strong>在虚拟机栈中出栈和入栈的过程。</li>
+<li>虚拟机栈就是<strong>执行Java方法的内存模型服务</strong>：每个方法的执行时都会创建一个栈帧，用于存储：<blockquote>
+<p> 局部变量表、操作数栈、动态链接、方法出口等信息</p>
+<ol>
+<li>局部变量表：存放编译期可知的各种<strong>数据类型、对象应用、returnAddress类型</strong></li>
+<li>操作数栈：大多数指令都要从这里：弹出数据，执行运算，把结果压回。</li>
+<li>动态连接：每个栈帧都包含一个指向<strong>运行时常量池</strong>（方法区的一部分）中该帧<strong>所属方法</strong>的<strong>引用</strong>。</li>
+<li>方法出口：返回方法被调用的位置，恢复上层方法的<strong>局部变量</strong>和<strong>操作数栈</strong>。类似递归时…</li>
+</ol>
+<p>局部表量表所需的内存空间在<strong>编译期间</strong>完成分配。 在方法运行期间不会改变局部变量表的大小。</p>
+</blockquote>
+</li>
+<li>虚拟机栈定义了两种异常：<ol>
+<li>StackOverfloError：线程请求的<strong>深度大于虚拟机所允许的深度</strong>。</li>
+<li>OutOfMemoryError：虚拟机栈动态扩展时无法申请到足够的内存。</li>
+</ol>
+</li>
+</ul>
+<p><strong>与本地方法栈比较</strong></p>
+<ol>
+<li>本地方法栈为虚拟机使用到<strong>的Native方法</strong>服务。 HotSpot虚拟机直接把本地方法栈和虚拟机栈合二为一。</li>
+<li>虚拟机栈为虚拟机<strong>执行Java方法（也就是字节码）</strong>服务。</li>
+</ol>
+<h3 id="方法区"><a href="#方法区" class="headerlink" title="方法区"></a>方法区</h3><p><strong>线程共享</strong>，用于存储<strong>已被虚拟机加载的类信息、常量、静态变量、运行时常量池</strong>，即编译后的代码，方法区也叫：<strong>持久代</strong>（Permanent Generation），Non-Heap（非堆）。因为它存放的信息与垃圾回收关系不打，可以<strong>选择不实现垃圾回收</strong>。</p>
+<p>方法区的内存回收主要针对：<strong>常量池的回收</strong>和<strong>类的卸载</strong>。</p>
+<p><strong>运行时常量池</strong>：</p>
+<ul>
+<li>jdk1.7之后，字符串常量池已经从方法区挪到堆中了。</li>
+<li>对比下，常量池：常量池数据编译期被确定，是Class文件中的一部分，存储了类、方法、接口等中的<strong>常量</strong>，也包括字符串常量。</li>
+<li>运行时常量池：方法区的一部分，所有线程共享。虚拟机加载Class后把常量池中的数据放入<strong>运行时常量池</strong>。</li>
+</ul>
+<h3 id="内存泄露"><a href="#内存泄露" class="headerlink" title="内存泄露"></a>内存泄露</h3><p><strong>什么是内存泄露？</strong></p>
+<blockquote>
+<p>指程序中己动态分配的堆内存由于某种原因程序未释放或无法释放，造成系统内存的浪费，导致程序运行速度减慢甚至系统崩溃等严重后果。 出现<strong>可达、无用的对象</strong>。</p>
+</blockquote>
+<p><strong>如何导致的？</strong></p>
+<p>长生命周期的对象持有短生命周期对象的引用就很可能发生内存泄漏，尽管短生命周期对象已经不再需要，但是因为长生命周期持有它的引用而导致不能被回收，这就是Java中内存泄漏的发生场景</p>
+<ol>
+<li>单例造成的内存泄漏</li>
+<li>非静态内部类创建静态实例造成的内存泄漏<blockquote>
+<p>解决办法：将该内部类设为静态内部类或将该内部类抽取出来封装成一个单例，如果需要使用Context，就使用Application的Context。</p>
+</blockquote>
+</li>
+<li>Handler造成的内存泄漏<blockquote>
+<p>解决办法：将Handler类独立出来或者使用静态内部类，这样便可以避免内存泄漏。</p>
+</blockquote>
+</li>
+<li>线程造成的内存泄漏<blockquote>
+<p>解决办法： 将AsyncTask和Runnable类独立出来或者使用静态内部类，这样便可以避免内存泄漏。</p>
+</blockquote>
+</li>
+<li>资源未关闭，监听器未关闭。</li>
+</ol>
+<p><strong>怎么解决？</strong></p>
+<ol>
+<li><ul>
+<li>将内部类改为静态内部类</li>
+<li>静态内部类中使用弱引用来引用外部类的成员变量</li>
+</ul>
+</li>
+<li><p>尽量避免使用 static 成员变量</p>
+</li>
+</ol>
+<h2 id="GC"><a href="#GC" class="headerlink" title="GC"></a>GC</h2><h1 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h1><p>集合类的基本接口:<strong>Collection</strong> 、<strong>Map</strong>。</p>
+<h2 id="集合和数组的转换"><a href="#集合和数组的转换" class="headerlink" title="集合和数组的转换"></a>集合和数组的转换</h2><ol>
+<li><p>数组——&gt;集合： <code>Arrays.asList</code>包装器可以实现</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String[] values = ...;</span><br><span class="line">HashSet&lt;String&gt; staff = <span class="keyword">new</span> HashSet&lt;&gt;(Arrays.asList(values));</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>集合——&gt;数组： 困难一些，通过<code>toArray()</code>方法得到的是对象数组，需要处理一下</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String[] values = (String[]) staff.toArrays(); <span class="comment">//Error! 不能强制转换 </span></span><br><span class="line">String[] values = staff.toArrays(<span class="keyword">new</span> String[<span class="number">0</span>]); <span class="comment">//0可以换成指定大小 staff.size()</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="Collection接口"><a href="#Collection接口" class="headerlink" title="Collection接口"></a>Collection接口</h2><p>实现有;List(LinkedList、ArrayList)、Set(HashSet、EnumSet、TreeSet)、Queue（PriorityQueue）。</p>
+<ul>
+<li><p>两个基本方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">add</span><span class="params">(E element)</span></span>;</span><br><span class="line"><span class="function">Iterator&lt;E&gt; <span class="title">iterator</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>迭代器：Iterator接口包含四个方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">E <span class="title">next</span><span class="params">()</span> </span>;  </span><br><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">hasNext</span><span class="params">()</span></span>; </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">remove</span><span class="params">()</span> </span>; </span><br><span class="line"><span class="function">deafult <span class="keyword">void</span> <span class="title">forEachRemaining</span><span class="params">(Consumer&lt;? <span class="keyword">super</span> E&gt; action)</span></span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>其实next()取下一个，之前需要判断有没有下一个；最重要的是可以直接使用<code>for each</code>循环操作；</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (String element : c)&#123;</span><br><span class="line">    <span class="keyword">do</span> something with element</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Collection接口扩展了Iterator接口，所以标准类库中的<strong>任何集合</strong>都可以使用<code>for each</code>。顺序是从0开始，而HashSet这种，每个元素将会按照某种随机的次序出现，每次出现不一定一致，对于求总和的倒是无碍。</p>
+</li>
+<li><p>next()读取元素的的同时，迭代位置会向前移动。 所以可以认为Iterator迭代器是位于<em>两个元素之间</em>。</p>
+</li>
+<li>remove() 会删除上次调用<code>next()</code> 方法时返回的元素。删除两个元素，需要配合着调用两次<code>next()</code></li>
+<li><p><strong>Collection提供的其他方法</strong>：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//返回一个用于访问集合中每个元素的迭代器/</span></span><br><span class="line"><span class="function">Iterator&lt;E&gt; <span class="title">iterator</span><span class="params">()</span></span>; /它本身也有三个函数：hashNext();next();remove()</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">size</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">add</span><span class="params">(Object element)</span>；</span></span><br><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">contains</span><span class="params">(Object obj)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">equals</span><span class="params">(Object obj)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">containsAll</span><span class="params">(Collection&lt;?&gt; other)</span>； <span class="comment">//这个集合包含other集合中的所有元素，返回true</span></span></span><br><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">retainAll</span><span class="params">(Collection&lt;?&gt; other)</span>； <span class="comment">//这个集合删除other集合中的所有元素，返回true</span></span></span><br><span class="line"><span class="function">还有<span class="title">remove</span><span class="params">()</span>、<span class="title">removeAll</span><span class="params">()</span>、<span class="title">clear</span><span class="params">()</span>、</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Collection一些很nice的功能函数，用好了可以省很多事：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">min();max(); <span class="comment">//返回集合中最小或者最大的元素</span></span><br><span class="line">copy(List&lt;? <span class="keyword">super</span> T&gt; to, LIst&lt;T&gt; from);<span class="comment">//将源列表的所有元素复制到目标列表的相应位置，目标列表长度大于等于源列表</span></span><br><span class="line">fill(List&lt;? <span class="keyword">super</span> T&gt; l, T value); <span class="comment">//将列表中所有位置设置为相同的值！！！！很关键。</span></span><br><span class="line">addALL();<span class="comment">//将所有的值添加到集合中，如果集合改变了，返回true</span></span><br><span class="line">a.removeAll(b);<span class="comment">//删除a中所有在b中出现的元素；</span></span><br><span class="line">a.retainAll(b);<span class="comment">//保留...同上</span></span><br><span class="line">replaceAll(List&lt;T&gt; l, T oldValue, T newValue); <span class="comment">//将集合中所有oldValue替换成newValue</span></span><br><span class="line">swap(list,<span class="keyword">int</span> i,<span class="keyword">int</span> j); <span class="comment">//交换他们的位置</span></span><br><span class="line">reverse(list); <span class="comment">//把列表元素逆序 ，时间复杂度是 O（n）</span></span><br><span class="line">frequency(Collection&lt;?&gt; c,Object o); <span class="comment">//返回c中与对象o相同的元素**个数**</span></span><br><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">disjoint</span><span class="params">(Collection&lt;?&gt; c,Collection&lt;?&gt; c2)</span></span>; <span class="comment">//如果两个集合没有相同元素，返回true</span></span><br><span class="line">removeIf(Predicate&lt;? <span class="keyword">super</span> E&gt; filter); <span class="comment">//删除所有匹配的元素</span></span><br><span class="line">replaceALl(UnaryOperator&lt;E&gt; op);<span class="comment">//对列表中所有元素应用这个操作</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="链表的一些骚操作"><a href="#链表的一些骚操作" class="headerlink" title="链表的一些骚操作"></a>链表的一些骚操作</h3><p>Java中的链表都是双向链表（有pre的），删除以前需要绕来绕去，Java改进了：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//添加三个元素，后删除第二个元素操作如下：</span></span><br><span class="line">List&lt;String&gt; staff = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">staff.add(<span class="string">"A"</span>);</span><br><span class="line">staff.add(<span class="string">"B"</span>);</span><br><span class="line">staff.add(<span class="string">"C"</span>);</span><br><span class="line"><span class="comment">//重点来了！！！-------</span></span><br><span class="line">Iterator iter = staff.iterator();</span><br><span class="line"><span class="comment">//-------------------</span></span><br><span class="line">String first = iter.next();</span><br><span class="line">String second = iter.next(); <span class="comment">//越过第二个元素啦，迭代器在二、三之间了</span></span><br><span class="line">iter.remove()； <span class="comment">//remove删除迭代器上一个越过的元素</span></span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>！！！add()操作也一样。会在迭代器之前位置添加。不过只有ListIterator接口有提供add方法。 无顺序的Set是没有这种的。</li>
+<li>！！双向链表，有个hasPrevious(),previous().这个时候调用<code>reomove()</code>会删除刚刚越过的元素，一样的；</li>
+<li>! <code>set(newValue)</code>操作也一样，会用新的值替代迭代器刚刚越过的元素</li>
+<li><strong>很有意思</strong>：LinkedList提供了一个访问某个特定元素的<code>get</code>方法：listDemo.get(i); 但其实还是遍历，只是如果索引大于size()/2就从链表尾部开始搜索。</li>
+</ul>
+<p>如果列表只有少量元素，那么就用ArrayList吧！ 避免使用以<strong>整数</strong>索引表示列表位置的所有方法。</p>
+<h3 id="ArrayList"><a href="#ArrayList" class="headerlink" title="ArrayList"></a>ArrayList</h3><p>ArrayList实现了List接口,它是以<strong>数组的方式来</strong>实现的,数组的特性是快速的随机读取值.</p>
+<p>循环List列表的三种方式: </p>
+<ul>
+<li>使用普通for循环,用get方法获取; </li>
+<li>使用Iterator迭代器,使用next方法遍历;</li>
+<li>使用增强for循环,直接输出!  </li>
+</ul>
+<blockquote>
+<p>由此可见第三种方法是最方便，最简洁的!</p>
+</blockquote>
+<p><strong>与Vector比较</strong>：</p>
+<ul>
+<li>ArrayList方法不是同步的，线程不安全，而Vector是同步的，线程安全，不过会在同步(在每个方法上面加了一个synchronized关键字来保证)操作上耗费大量时间。</li>
+<li>数组扩容的时候，Vector是<em>2，ArrayList是</em>1.5+1；</li>
+</ul>
+<h3 id="LinkedList"><a href="#LinkedList" class="headerlink" title="LinkedList"></a>LinkedList</h3><ol>
+<li>采用链表的方式来实现List接口的,它本身有自己特定的方法，如: addFirst(),addLast(),getFirst(),removeFirst()等.</li>
+<li>由于是采用链表实现的,因此在进行insert和remove动作时在效率上要比ArrayList要好得多!</li>
+<li>适合用来实现Stack(堆栈)与Queue(队列),前者先进后出，后者是先进先出.</li>
+<li>LinkedList类实现了Queue接口，因此我们可以把LinkedList当成Queue来用</li>
+</ol>
+<h3 id="ArrayList与LinkedList的区别"><a href="#ArrayList与LinkedList的区别" class="headerlink" title="ArrayList与LinkedList的区别"></a>ArrayList与LinkedList的区别</h3><p>ArrayList与LinkedList都是List接口的实现类,List接口继承了Collection接口,Collection接口又继承了Iterable接口,因此可以看出List同时拥有了<strong>Collection与Iterable接口的特性</strong>.</p>
+<h3 id="HashSet"><a href="#HashSet" class="headerlink" title="HashSet"></a>HashSet</h3><ul>
+<li>hashCode，自己实现hashCode方法应该与equal方法一起，如果<code>a.equals(b)</code>成立，则a与b的散列码必须相同。</li>
+<li>散列表用<strong>链表数组实现</strong>,找位置：<ol>
+<li>计算散列码；</li>
+<li>用散列码与桶的总数取余；</li>
+<li>无其他元素，直接放进去；</li>
+<li>有的话，比较hashCode是否相同？相同，不管：不相同，在该桶的链上插入，桶满了（链长度到达阈值），变为平衡二叉树（后改进为红黑树）</li>
+</ol>
+</li>
+<li>通常把桶数设定为预计插入元素的75%~150%；</li>
+<li>散列表太满了，需要增加桶树，就需要将原来的所有元素从新插入新表；满的判定一般用 <strong>装填因子</strong>（一般0.75），超过75%的位置都已经填入元素，就增加双倍桶数目；</li>
+</ul>
+<p><strong>TreeSet</strong>：树集。变成有序集合。可以按照顺序打印，使用红黑树去实现，插入操作会慢一点。需要实现Comparable接口</p>
+<h2 id="Map接口"><a href="#Map接口" class="headerlink" title="Map接口"></a>Map接口</h2><p>也叫映射。是对<strong>键</strong>进行散列、比较。值不能散列或比较。</p>
+<p>实现有：HashMap、TreeMap、EnumMap、</p>
+<p><strong>树映射还是散列映射？</strong></p>
+<p>看需求。速度还是顺序性？</p>
+<p>add() -&gt; put() ; next() -&gt; get();</p>
+<h3 id="HashMap"><a href="#HashMap" class="headerlink" title="HashMap"></a>HashMap</h3><p><strong>底层实现</strong>：HashMap是基于<strong>哈希表</strong>的M<strong>ap接口</strong>的<strong>非同步</strong>实现。它是线程不安全的，允许key为null,value为null。</p>
+<blockquote>
+<ul>
+<li>Java最基本数据结构就是两种，一种是数组，一种是引用。<strong>所有的数据结构都可以用这两个基本结构来构造的</strong>,HashMap也不例外。</li>
+<li>HashMap实际上是一个“<strong>链表散列</strong>”的数据结构，即数组和链表的结合体。</li>
+<li><strong>HashMap底层</strong>就是一<strong>个数组结构</strong>，<strong>数组中的每一项又是一个链表</strong>。</li>
+<li>当新建一个HashMap的时候，就会初始化一个数组。Entry就是数组中的元素(1.8改成Node)，每个 Map.Entry 其实就是一个key-value对，它持有一个指向下一个元素的引用，这就构成了链表。</li>
+<li>每一个节点的hash值，是将key的hashCode 和 value的hashCode 异或 ^ 得到的。</li>
+</ul>
+</blockquote>
+<p><strong>存取实现</strong>：</p>
+<ul>
+<li><strong>put</strong>元素的时候:</li>
+</ul>
+<ol>
+<li>先根据<strong>key的hashCode重新计算hash值</strong>，根据hash值得到这个元素在<strong>数组中的位置</strong>（即下标）。</li>
+<li>如果数组该位置上已经<strong>存放有</strong>其他元素了，那么在这个位置上的元素将<strong>以链表的形式存放</strong>，<strong>新加入的放在链头，最先加入的放在尾</strong>，1.8某版本之后放到链尾了，防止多并发造成的死循环。</li>
+<li>如果数组该位置上没有元素，就直接将该元素放到此数组中的该位置上。</li>
+</ol>
+<ul>
+<li><strong>get</strong>元素的时候</li>
+</ul>
+<blockquote>
+<p><strong>注意</strong>：</p>
+<ul>
+<li>当HashMap的容量达到threshold域值时，就会触发扩容。扩容前后，哈希桶的长度一定会是2的次方。 这样在根据key的hash值寻找对应的哈希桶时，可以用位运算替代取余操作，更加高效。</li>
+<li>扰动函数,hashcode还要处理下，更均衡,高低位都参与运算。</li>
+<li>HashMap的源码中，充斥个各种位运算代替常规运算的地方，以提升效率： <ol>
+<li>与运算替代模运算。用 hash &amp; (table.length-1) 替代 hash % (table.length) </li>
+<li>用if ((e.hash &amp; oldCap) == 0)判断扩容后，节点e处于低区还是高区。(冲突，自然就要分区)</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<h3 id="HashMap和有序LinkedHashMap实现对比"><a href="#HashMap和有序LinkedHashMap实现对比" class="headerlink" title="HashMap和有序LinkedHashMap实现对比"></a>HashMap和有序LinkedHashMap实现对比</h3><ul>
+<li>LinkedHashMap简单来说是一个<strong>有序</strong>的HashMap</li>
+<li>LinkedHashMap实现有序key值的关键就是根据插入顺序另外维护了一个按照插入顺序作为标记的双向循环列表</li>
+</ul>
+<h3 id="TreeMap"><a href="#TreeMap" class="headerlink" title="TreeMap"></a>TreeMap</h3><h3 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h3><p><strong>Map</strong>：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">V <span class="title">get</span><span class="params">(Object key)</span></span>; <span class="comment">//获取与键对应的值，无返回null</span></span><br><span class="line"><span class="function"><span class="keyword">default</span> V <span class="title">getOrDefault</span><span class="params">(Object key,V defaultValue)</span> <span class="comment">// 无返回默认值defaultValue</span></span></span><br><span class="line"><span class="function">V <span class="title">put</span><span class="params">(K key,V value)</span></span>; <span class="comment">//插入数据，如果键已存在，则覆盖原数据，返回对应的旧值；如果键不存在，返回null。</span></span><br><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">containsKey</span><span class="params">(Object key)</span></span>; <span class="comment">//是否已有这个键</span></span><br><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">containsValu</span><span class="params">(Object value)</span></span>; <span class="comment">//是否已有这个值</span></span><br><span class="line"><span class="function"><span class="keyword">default</span> <span class="keyword">void</span> <span class="title">forEach</span><span class="params">()</span></span>;</span><br></pre></td></tr></table></figure></p>
+<p><strong>HashMap</strong>:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">HashMap();</span><br><span class="line">HashMap(<span class="keyword">int</span> initialCapacity);</span><br><span class="line">HashMap(<span class="keyword">int</span> initialCapacity,<span class="keyword">float</span> loadFactor); <span class="comment">//给定容量和装填因子构造一个空散列映射，默认装填因子0.75.</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>TreeMap</strong>：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">TreeMap(); <span class="comment">//为实现Comparable接口的键构造一个空的树映射</span></span><br><span class="line">TreeMap(Comparator&lt;? <span class="keyword">super</span> K&gt; c);<span class="comment">//使用一个指定的比较器对键排序</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>SortedMap</strong>：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Comparator&lt;? <span class="keyword">super</span> K&gt; comparator(); <span class="comment">//返回对键排序的比较器，如果是用Comparable接口的CompareTo方法进行比较的，返回null</span></span><br><span class="line"><span class="function">K <span class="title">firstKey</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function">K <span class="title">lastKey</span><span class="params">()</span></span>;<span class="comment">//返回映射中的最小元素和最大元素</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="队列-Queue"><a href="#队列-Queue" class="headerlink" title="队列 Queue"></a>队列 Queue</h2><h3 id="一些方法"><a href="#一些方法" class="headerlink" title="一些方法"></a>一些方法</h3><p>Queue：</p>
+<ul>
+<li><code>boolean add(E element)</code><br>和 <code>boolean offer(E element)</code>：尾部添加元素，如果满了，第一个方法是抛出异常，第二个是返回false。</li>
+<li><code>E remove() ; E poll();</code> <strong>删除并返回</strong>队头元素，为空的话，第一个抛出异常，第二个返回nul。</li>
+<li><code>E element(); E peek();</code><strong>返回但不删除</strong>头部元素，如果为空，第一个抛出异常，第二个返回null。</li>
+</ul>
+<p>Deque：</p>
+<ul>
+<li><code>void addFirst(E element); void addLast(E element)</code>和<code>boolean offerFirst(E element); boolean offerLast(E element)</code>:前两个添加失败是抛出异常，后两个是返回false。</li>
+<li>下同。都是加一个First，Last的区别</li>
+<li><h3 id="优先队列-PriorityQueue"><a href="#优先队列-PriorityQueue" class="headerlink" title="优先队列 PriorityQueue"></a>优先队列 PriorityQueue</h3>小顶堆的感觉，用二叉树实现，每次remove都是删除最小的。 典型示例：任务调度，有优先级的。</li>
+</ul>
+<p>其add()自动按照构建小顶堆的方式添加元素。</p>
+<h2 id="栈-Stack"><a href="#栈-Stack" class="headerlink" title="栈 Stack"></a>栈 Stack</h2><p><strong>特点</strong>：后进先出，实现了一些栈基本操作的方法（其实并不是只能后进先出，因为继承自Vector，可以有很多操作，从某种意义上来讲，不是一个栈）；</p>
+<p><strong>相关方法</strong>：实现了栈的基本操作。方法如下：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//创建空栈</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Stack</span><span class="params">()</span></span>;</span><br><span class="line"><span class="comment">//返回栈顶的值；</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> E <span class="title">peek</span><span class="params">()</span></span>;</span><br><span class="line"><span class="comment">//入栈操作；</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> E <span class="title">push</span><span class="params">(E item)</span></span>;</span><br><span class="line"><span class="comment">//出栈操作；</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> E <span class="title">pop</span><span class="params">()</span></span>;</span><br><span class="line">/判断栈是否为空；</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">empty</span><span class="params">()</span></span>;</span><br><span class="line"><span class="comment">//返回对象在栈中的位置；</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">int</span> <span class="title">search</span><span class="params">(Object o)</span></span>;</span><br></pre></td></tr></table></figure></p>
+<p><strong>注意</strong>:用作 LIFO（后进先出）堆栈。应优先使用此接口而不是遗留 Stack 类。在将双端队列用作堆栈时，元素被推入双端队列的开头并从双端队列开头弹出.<br><code>addFirst(); removeFirst();</code></p>
+<h2 id="遗留的集合"><a href="#遗留的集合" class="headerlink" title="遗留的集合"></a>遗留的集合</h2><p><strong>HashTable</strong>: 跟Vector一样，是同步的。一般不考虑同步用HashMap，考虑同步并发用ConcurrentHashMap。也就是基本不用它了。</p>
+<p><strong>枚举</strong>：两个方法，<code>hasMoreElements(); nextElements();</code>而 Hashtable类的<code>elements()</code>方法将产生一个用于描述表中各个枚举值的对象。Vector类也有这个方法。</p>
+<p><strong>Vector</strong>：随机访问速度快，插入和移除性能较差(数组的特点)；支持null元素；有顺序；元素可以重复；线程安全；</p>
+<h1 id="进程、多线程、线程池"><a href="#进程、多线程、线程池" class="headerlink" title="进程、多线程、线程池"></a>进程、多线程、线程池</h1><h2 id="一些常见问题"><a href="#一些常见问题" class="headerlink" title="一些常见问题"></a>一些常见问题</h2><ol>
+<li>如果对<code>Thread</code>派生子类，就应当<strong>只</strong>覆盖<code>run()</code>，而不要覆盖其他方法！ Thread类的其他方法（star(),interrupt(),join(),sleep()等标准方法）都有非常特定的语义。可以根据需要<strong>提供额外的构造函数和其他方法</strong>。</li>
+<li>线程sleep和wait的区别？哪个涉及锁的释放？<blockquote>
+<p>wait释放了锁，使得其他线程可以使用同步控制块或者方法。<br>wait，notify和notifyAll只能在同步控制方法或者同步控制块里面使用，而sleep可以在任何地方使用（使用范围）<br>sleep必须捕获异常，而wait，notify和notifyAll不需要捕获异常</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h2><ol>
+<li>进程和线程的区别？<blockquote>
+<ul>
+<li>进程：进程是程序的一次执行过程；进程是是正在运行程序的抽象；系统资源（如内存、文件）以进程为单位分配；操作系统为每个进程分配了独立的地址空间；操作系统通过“调度”把控制权交给进程。</li>
+<li>线程：有标识符ID；有状态及状态转换；不运行时需要保存上下文环境（需要程序计数器等寄存器）；有自己的栈和栈指针<br>；共享所在进程的地址空间和其它资源。</li>
+<li>区别：<br>   定义方面：进程是程序在某个数据集合上的一次运行活动；线程是进程中的一个执行路径。（进程可以创建多个线程）<br>   角色方面：在支持线程机制的系统中，进程是系统资源分配的单位，线程是CPU调度的单位。<br>   资源共享方面：进程之间不能共享资源，而线程共享所在进程的地址空间和其它资源。同时线程还有自己的栈和栈指针，程序计数器等寄存器。<br>   独立性方面：进程有自己独立的地址空间，而线程没有，线程必须依赖于进程而存在。<br>   开销方面。进程切换的开销较大。线程相对较小。（前面也提到过，引入线程也出于了开销的考虑。）</li>
+</ul>
+</blockquote>
+</li>
+<li>为什么要引入线程？ <blockquote>
+<p>进程有利于资源的管理和保护,但是： </p>
+<ol>
+<li>进程切换的代价、开销比较大； 在进程内创建、终止线程比创建、终止进程要快。</li>
+<li>在一个进程内也需要并行执行多个程序，实现不同的功能。 性能也快很多</li>
+<li>进程有时候性能比较低。</li>
+</ol>
+</blockquote>
+</li>
+</ol>
+<h2 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Thread(Runable target); <span class="comment">//构造一个新线程</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">start</span><span class="params">()</span></span>; <span class="comment">//启动这个线程，将引发调用run()方法。这个方法将立即返回，并且新线程将并发运行</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>; <span class="comment">//调用关联Runnable的run方法</span></span><br><span class="line">——————</span><br><span class="line">Thread t = Thread(r);</span><br><span class="line">t.start();</span><br></pre></td></tr></table></figure>
+<h3 id="中断线程"><a href="#中断线程" class="headerlink" title="中断线程"></a>中断线程</h3><ul>
+<li>run()方法执行到最后一个语句，并经由return语句返回时；</li>
+<li>出现在方法中没有捕获的异常；</li>
+<li><p>早起有个stop（弃用），现在用<code>interrupt</code>方法：</p>
+<blockquote>
+<p>调用interrupt方法时，线程中的<strong>中断状态</strong>将被置位，一个boolean值，每个线程都有，时刻要检查。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="keyword">while</span>(!Thread.currentThread().isInterrupted() &amp;&amp; more work to <span class="keyword">do</span>)&#123;<span class="keyword">do</span> more work&#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<ul>
+<li>中断不意味着终止；</li>
+<li>线程被阻塞时，无法检查中断状态，会发生异常——打断阻塞调用。</li>
+<li>循环调用sleep，不会检查中断状态（中断状态被置位时调用sleep是不会休眠的。）</li>
+</ul>
+</li>
+<li>Thread类的方法<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">interrupt</span><span class="params">()</span></span>;<span class="comment">//中断状态被置位true，如该线程被sleep调用阻塞-》InterruptException异常</span></span><br><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">interrupted</span><span class="params">()</span></span>;<span class="comment">// 测试当前线程是否被中断，并且会把中断状态置false</span></span><br><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">isInterrupted</span><span class="params">()</span></span>;<span class="comment">//测试，不会改变状态</span></span><br><span class="line"><span class="function">Thread <span class="title">currentThread</span><span class="params">()</span></span>; <span class="comment">//返回代表当前执行线程的Thread对象</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="线程状态"><a href="#线程状态" class="headerlink" title="线程状态"></a>线程状态</h3><p>6种：用<code>getState()</code>获取状态</p>
+<ul>
+<li>New  -&gt; new Thread(r)之后</li>
+<li>Runnable 可运行  -&gt; start()之后<blockquote>
+<p>可能运行也可能不在运行；抢占式调度，多处理器可以多个线程并行，超过处理器数量，也会采用时间片机制</p>
+</blockquote>
+</li>
+<li>Blocked -&gt;线程获取内部对象锁（不是concurrent库中的锁），别人再用，那就进入阻塞。</li>
+<li>Waiting -&gt;线程等待另一个线程通知调度器一个条件？？？，等待通知，进入等待。<blockquote>
+<p>比如调用 Object.wait(); Thread.join();或者等待concurrent库中的Lock或Condition时，就会出现这种情况。</p>
+</blockquote>
+</li>
+<li>Timed waitiong 计时等待 -&gt; 调用几个有超时参数的方法，保持到超时期满或者收到适当的通知；<blockquote>
+<p>Thread.sleep() / Object.wait() / Thread.join  / Lock.tryLock  / Condition.wait</p>
+</blockquote>
+</li>
+<li>Terminated -&gt; 1. run()方法正常退出而死亡；未捕获异常终止了run方法而意外死亡。</li>
+</ul>
+<h3 id="线程属性"><a href="#线程属性" class="headerlink" title="线程属性"></a>线程属性</h3><ol>
+<li>线程优先级：1-10，<code>setPriority()</code>设置，高度依赖与系统的分级，慎用。</li>
+<li>守护线程：唯一用途——为其他线程提供服务，例如，计时线程。 当只剩下守护线程时，虚拟机就退出，不要用它器访问固有资源，因为它随时会发生中断。</li>
+</ol>
+<h2 id="同步"><a href="#同步" class="headerlink" title="同步"></a>同步</h2><p>多个线程竞争资源（Bank账户写..）出现冲突，需要用到锁。</p>
+<p><strong>条件对象</strong>：用来管理哪些已经获得一个锁但却不能做有用工作的线程（比如余额不足，无法转账），用条件对象去表达余额充足的条件：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> Condition sufficientFunds;</span><br><span class="line">...</span><br><span class="line">sufficientFunds = bankLock.newCondition();</span><br><span class="line">...</span><br><span class="line"><span class="comment">//如果发现余额不足，可调用方法</span></span><br><span class="line">sufficientFunds.await();  <span class="comment">//当前线程被阻塞，并放弃锁</span></span><br><span class="line"><span class="comment">//需要配套的方法唤醒，而不是锁可用就行,这方法也只是解除阻塞，不是激活它，需要它自己去重新竞争锁</span></span><br><span class="line">sufficientFunds.signalAll();  <span class="comment">//解除该条件的等待的所有线程的阻塞状态，signal()则是随机选一个</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="锁-多线程"><a href="#锁-多线程" class="headerlink" title="锁-多线程"></a>锁-多线程</h2><p><strong>锁和条件的关键之处</strong>：</p>
+<ol>
+<li>锁用来保护代码片段，任何时刻只能有一个线程执行被保护代码；</li>
+<li>锁可以管理试图进入被保护代码段的线程；</li>
+<li>锁可以拥有一个或者多个相关的条件对象；</li>
+<li>每个条件对象管理哪些已经进入被保护代码段，但是还不能运行的线程。</li>
+</ol>
+<p><strong>Lock</strong>：如果锁被另一个线程拥有，则发生阻塞；</p>
+<p><strong>ReentrantLock</strong>：可重入锁，用来保护临界区，公平策略；</p>
+<p><strong>ReentrantReadWriteLock</strong>：读写锁，适用于读多写少的场景，允许读者线程共享访问，写者线程依旧是互斥访问。</p>
+<p><strong>synchronized</strong>：Java语言内部锁。只有一个相关条件，使用<code>wait()</code>和<code>notify()/notifyAll()</code>进行线程等待和解除阻塞。(这三个方法是Object类的final方法，自己命名的Condition方法必须命名为await、signalAll，不冲突。)；锁变量，保证三大特性（原子、可见、有序），编译器优化。</p>
+<blockquote>
+<p>存在一些局限性：</p>
+<ol>
+<li>不能中断一个正在试图获得锁的线程；</li>
+<li>试图获得锁时不能设定超时；  但是有wait(long millis)方法。</li>
+<li>每个锁只有单一的条件对象，可能是不够的。</li>
+</ol>
+</blockquote>
+<p><strong>使用建议</strong>： </p>
+<ol>
+<li>最好用java.util.concurrent包中的一种机制；</li>
+<li>如果synchronized关键字适合，那就用吧，可以减少代码数量，减少出错的几率；</li>
+<li>除非很有必要，才使用Lock/Condition。 </li>
+</ol>
+<p><strong>监视器概念</strong>：实现不需要程序员考虑如何加锁的情况下，就可以保证多线程的安全性。监视器具有以下概念：</p>
+<ul>
+<li>只包含私有域的类；</li>
+<li>每个监视器类的对象有一个相关的锁；</li>
+<li>使用该锁对所有方法进行加锁，调用时自动获得，方法返回时自动释放；</li>
+<li>可以有任意多个相关条件。</li>
+</ul>
+<p>但是Java对象有三个不满足于监视器的诟病：</p>
+<ul>
+<li>域不要求必须是private；</li>
+<li>方法不要求必须是synchronized；</li>
+<li>内部锁对客户是可用的。</li>
+</ul>
+<p><strong>Volatile域</strong>：为实例域的同步访问提供了一种<strong>免锁机制</strong>。开销小，非阻塞；不保证原子性；</p>
+<blockquote>
+<p>应对：指令重排 和 多处理器出现-暂存在寄存器或本地内存缓冲去中保存内存中的值，多线程取值不同；</p>
+</blockquote>
+<p><strong>原子性</strong>：i++不是一个原子操作：读，加，写。<br>解决：jdk1.5后，concurrent.atomic包提供了int和long类型的装类，可以保证操作的原子性，而不需要使用同步。可以用<code>AtomicInteger.incrementAndGet()</code>以原子性将整数自增。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> AtomicLong nextNumber = <span class="keyword">new</span> AtomicLong();</span><br><span class="line"><span class="keyword">long</span> id = nextNumber.incrementAndGet();</span><br></pre></td></tr></table></figure></p>
+<h3 id="Synchronized-和-ReentrantLock的区别？"><a href="#Synchronized-和-ReentrantLock的区别？" class="headerlink" title="Synchronized 和 ReentrantLock的区别？"></a>Synchronized 和 ReentrantLock的区别？</h3><h3 id="CAS"><a href="#CAS" class="headerlink" title="CAS"></a>CAS</h3><p>比较并交换。属于乐观锁技术。</p>
+<p>优点：确保对内存的读-改-写操作都是原子操作执行。</p>
+<p>缺点：<strong>ABA问题</strong>；循环时间长开销大；<strong>只能保证一个共享变量</strong>的原子操作。</p>
+<p>总结：<strong>线程冲突较少</strong>的情况使用。</p>
+<h3 id="AQS-（AbstractQueuedSynchronizer）"><a href="#AQS-（AbstractQueuedSynchronizer）" class="headerlink" title="AQS  （AbstractQueuedSynchronizer）"></a>AQS  （AbstractQueuedSynchronizer）</h3><p>是一个用于构建锁和同步容器的框架。 concurrent包许多类都是基于AQS构建的。例如：</p>
+<blockquote>
+<p>ReentrantLock、Semaphore、FutureTask.</p>
+</blockquote>
+<p>解决了 ：在实现同步容器时设计的大量细节问题。</p>
+<p>AQS使用一个FIFO的双向队列表示排队等待锁的线程。队列头节点称为<strong>哨兵节点</strong>。其他节点都维护一个等待状态<code>waitStatus</code>。</p>
+<p>AQS还有一个表示状态的字段state。</p>
+<h3 id="死锁"><a href="#死锁" class="headerlink" title="死锁"></a>死锁</h3><blockquote>
+<p>当程序挂起时，用Ctrl + \，将得到一个所有线程的列表，还能看到线程被阻塞的位置。 也可以用<code>jconsole</code>参考线程面板。</p>
+</blockquote>
+<p>signal只为一个线程解锁，容易导致死锁，无法避免。</p>
+<p><strong>尽量避免共享变量</strong>：使用ThreadLocal辅助类为各个线程提供各自的实例。而不是为之构造一个局部对象。</p>
+<p><strong>ThreadLocal</strong>：</p>
+<ul>
+<li>方法:<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">get();<span class="comment">//得到这个线程的当前值</span></span><br><span class="line">initialize(); <span class="comment">//覆盖这个方法用于提供初值</span></span><br><span class="line">set();<span class="comment">//为这个线程设置一个新值</span></span><br><span class="line">remove();<span class="comment">//删除对于线程的值</span></span><br><span class="line"><span class="keyword">static</span> &lt;S&gt; <span class="function">ThreadLocal&lt;S&gt; <span class="title">withInitial</span><span class="params">(Supplier&lt;? extends S&gt; supplier)</span></span>; <span class="comment">//创建一个线程局部变量</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="线程安全的集合"><a href="#线程安全的集合" class="headerlink" title="线程安全的集合"></a>线程安全的集合</h3><ul>
+<li><strong>ConcurrentHashMap</strong>:</li>
+</ul>
+<h3 id="同步器"><a href="#同步器" class="headerlink" title="同步器"></a>同步器</h3><p>帮助管理相互合作的线程集。</p>
+<ol>
+<li>信号量 Semaphpre ： 许可证，acquire请求许可，release释放许可；</li>
+<li>倒计时门栓 CountDownLatch： 倒计时，技术为0，不可用，一次性的；计数值初始为1时比较特殊。</li>
+<li>障栅 CyclicBarrier ： 集结点，线程都完成到达门口，门才开;可重复使用</li>
+<li>交换器 Exchanger ： 当两个线程在同一个数据缓冲去的两个实例上工作时。</li>
+<li>同步队列 SynchronousQueue 生产者消费者线程配对的机制</li>
+</ol>
+<h1 id="IO"><a href="#IO" class="headerlink" title="IO"></a>IO</h1><h2 id="几种IO比较"><a href="#几种IO比较" class="headerlink" title="几种IO比较"></a>几种IO比较</h2><p><strong>BIO</strong>：同步阻塞IO，阻塞整个步骤，如果连接少，他的延迟是最低的，因为一个线程只处理一个连接，适用于少连接且延迟低的场景，比如说数据库连接。</p>
+<p><strong>NIO</strong>：同步非阻塞IO，阻塞业务处理但不阻塞数据接收，适用于高并发且处理简单的场景，比如聊天软件。</p>
+<p><strong>AIO</strong>：异步IO，他的数据请求和数据处理都是异步的，数据请求一次返回一次，适用于长连接的业务场景。</p>
+<h2 id="NIO"><a href="#NIO" class="headerlink" title="NIO"></a>NIO</h2><p>JDK1.4开始，增加了新的io模式<strong>new IO</strong>。 Socket也属于IO的一种，nio为它提供了：</p>
+<blockquote>
+<p>ServerSocketChannel 和 SocketChannel</p>
+</blockquote>
+<p><strong>三个重要概念</strong>：<code>Buffer</code>(所送货物)、<code>Channel</code>（送货车）、<code>Selector</code>（分拣员）。</p>
+<ol>
+<li><p><strong>Buffer</strong></p>
+<blockquote>
+<p><strong>四个属性</strong>：mark &lt;= postion &lt;= limit &lt;= capacity</p>
+<ul>
+<li>capacity:容量，最多可以保存多少元素，创建初设定后无法改变；</li>
+<li>limit：可以使用的上限，当前有20个元素，就只能操作20个。这个值需要 &lt;= capacity；</li>
+<li>position:当前所操作元素所在的索引位置，从0开始，随着get和put方法自动更新；</li>
+<li>mark：暂存postion，可以通过reset方法，将postion恢复到mark位置。</li>
+</ul>
+<p><strong>两个方法</strong>：</p>
+<ul>
+<li>clear():初始化limit = capacity、position = 0、mark= -1三个属性。</li>
+<li>flip():保存数据后让position加1，读数据需要将position位置设置为limit。</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>Channel</strong></p>
+</li>
+<li><strong>Selector</strong></li>
+</ol>
+<p><strong>NioSocket</strong>中服务端的处理过程：</p>
+<ol>
+<li>创建<code>ServerSocketChannel</code>并设置相应参数；</li>
+<li>创建<code>Selector</code>并<strong>注册</strong>到<code>ServerSocketChanel</code>上；</li>
+<li>调用<code>Selector</code>的<code>select</code>方法<strong>等待请求</strong>；</li>
+<li><code>Selector</code>接受到请求后使用<code>selectedKeyr</code>返回<code>SelectionKey</code>集合；</li>
+<li>使用<code>SelectionKey</code>获取到<code>Channel</code>、<code>Selector</code>和操作类型并进行具体操作。</li>
+</ol>
+<h2 id="Netty"><a href="#Netty" class="headerlink" title="Netty"></a>Netty</h2><h3 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h3><ol>
+<li>Netty为什么传输快？ 零拷贝。</li>
+<li>为什么说Netty封装好？<ul>
+<li>Channel:表示一个连接<blockquote>
+<p>ChannelHandler，用于处理业务请求;ChannelHandlerContext，用于传输业务数据;ChannelPipeline，用于保存处理过程需要用到的ChannelHandler和ChannelHandlerContext。</p>
+</blockquote>
+</li>
+<li>ByteBuf:使用方便<blockquote>
+<p>Heap Buffer 堆缓冲区;Direct Buffer 直接缓冲区;Composite Buffer 复合缓冲区</p>
+</blockquote>
+</li>
+<li>Codec : Netty中的编码/解码器</li>
+</ul>
+</li>
+</ol>
+<h1 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h1><h1 id="TCP-IP"><a href="#TCP-IP" class="headerlink" title="TCP/IP"></a>TCP/IP</h1><h1 id="Spring-MVC"><a href="#Spring-MVC" class="headerlink" title="Spring MVC"></a>Spring MVC</h1><h2 id="相关术语"><a href="#相关术语" class="headerlink" title="相关术语"></a>相关术语</h2><ul>
+<li>DispatcherServlet</li>
+<li>HandlerAdapter</li>
+<li>HandlerMapping</li>
+<li>ViewResolver</li>
+<li></li>
+</ul>
+<h2 id="常用注解"><a href="#常用注解" class="headerlink" title="常用注解"></a>常用注解</h2><ul>
+<li>Controller  指示Spring类的实例是一个控制器</li>
+<li>RequestMapping  指示一个请求处理方法</li>
+<li>GetMapping</li>
+<li>PostMapping</li>
+<li>RequestParam  参数绑定</li>
+<li></li>
+</ul>
+<h2 id="标签库"><a href="#标签库" class="headerlink" title="标签库"></a>标签库</h2><ul>
+<li>form</li>
+<li>input</li>
+<li>password</li>
+<li>hidden</li>
+<li></li>
+</ul>
+<h2 id="ORM和MyBatis"><a href="#ORM和MyBatis" class="headerlink" title="ORM和MyBatis"></a>ORM和MyBatis</h2><h3 id="ORM"><a href="#ORM" class="headerlink" title="ORM"></a>ORM</h3><p>对象/关系数据映射</p>
+<h3 id="MyBatis"><a href="#MyBatis" class="headerlink" title="MyBatis"></a>MyBatis</h3><ul>
+<li>SqlSession 类似JDBC中的Connection</li>
+<li></li>
+</ul>
+<h1 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a>Spring</h1><p><a href="https://juejin.im/post/5b6d33555188251b176a962b?utm_source=gold_browser_extension" target="_blank" rel="noopener">参考文章1</a></p>
+<h2 id="Spring的优点、特点"><a href="#Spring的优点、特点" class="headerlink" title="Spring的优点、特点"></a>Spring的优点、特点</h2><p>轻量级、松散耦合、开源、可集成其他框架、分层体系结构，用户可选择组件。</p>
+<h2 id="注解那些事"><a href="#注解那些事" class="headerlink" title="注解那些事"></a>注解那些事</h2><ul>
+<li></li>
+</ul>
+<ol>
+<li>@Resource默认按照名称方式进行bean匹配   J2EE的注解</li>
+<li>@Autowired默认按照类型方式进行bean匹配   Spring的注解</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://xdcrazyboy.github.io/2018/06/01/《听什么歌都像是在唱自己》/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="fengziboboy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="fengziboboy&个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/06/01/《听什么歌都像是在唱自己》/" itemprop="url">《听什么歌都像是在唱自己》——网易云音乐那些热评</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-01T22:10:07+08:00">
+                2018-06-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/杂记/" itemprop="url" rel="index">
+                    <span itemprop="name">杂记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/06/01/《听什么歌都像是在唱自己》/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/06/01/《听什么歌都像是在唱自己》/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>意外看到这本书，也许已经是很老的书了，但最近自己刚刚失恋，所以看起来格外——中~，就抽一些记录一下吧。对了，几乎都是情情爱爱的。我会把评论所在的歌名放后面，具体谁写的，大家自己去看吧。</p>
+<h1 id="一些可以用的情话"><a href="#一些可以用的情话" class="headerlink" title="一些可以用的情话"></a>一些可以用的情话</h1><ol>
+<li>我羡慕甚至嫉妒，你身边每一个无关紧要的人。他们就那么轻而易举地见到，我朝思暮想的你。 ——《词不达意》<blockquote>
+<p>好老的句子了，慎用。 多用于暗恋或者异地的~~看看就行了。</p>
+</blockquote>
+</li>
+<li>给你一支口红，以后每天还我一点就好了。 ——《Little Monkey Rides on the Little Donkey》<blockquote>
+<p>想得挺美，记得买好点的口红~</p>
+</blockquote>
+</li>
+<li>和你在一起的时候，我从未羡慕过任何人。 ——《我好想你》</li>
+<li>我本来想送你一个超级可爱的礼物，可是快递员不让我钻进箱子里。 ——《雅俗共赏》 （很有趣的，收藏了）</li>
+<li>“有人说爱上小溪书因为没有见过大海，但其实我见过银河却只爱你这一颗星。” ——《怪情歌》</li>
+<li>愿我能在你清晨薄雾般的眼神里，愿我常在你清澈安详的心湖底。 ——《贝加尔湖》</li>
+<li>我不喜欢这世界，我只喜欢你。——《宝贝（in life）》</li>
+<li>“我们玩木头人不许动。”     “来，开始。”  “哎，我认输。”  “为什么呀！”  “因为，我看着你……心动啦！” ——</li>
+<li>想念你的时候才觉得自己法力无边，好像连温度都能握在手心里面。——《（这名字我打不出来）》</li>
+</ol>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/06/01/《听什么歌都像是在唱自己》/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="fengziboboy" />
+            
+              <p class="site-author-name" itemprop="name">fengziboboy</p>
+              <p class="site-description motion-element" itemprop="description">这是一个会java、c++、python、go、javascript，研究区块链、云计算、容器、虚拟化、密码学，爱好摄影、旅行、历史、经济、心理学 的程序员之个人博客</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/xdcrazyboy" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:fengziboboy@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://juejin.im/user/58a70bd661ff4b45461e6bf3" target="_blank" title="掘金">
+                      
+                        <i class="fa fa-fw fa-vk"></i>掘金</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://baidu.com/" title="百度" target="_blank">百度</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">fengziboboy</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
+    
+
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

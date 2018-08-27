@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="阅读书目：《微服务那些事儿》，鼓励大家支持，书很薄。 为什么选择微服务别人挫呀-传统架构的问题 笨拙 耦合严重 协作困难 无法持续交付 受技术栈限制-技术选型受限 债务多，该bug太难了，越改越多  微服务可以解决那些挫 架构轻量灵活、可应付需求的变化 可持续交付 业务敏捷 独立演进 高可用、高性能 站在云端  业务能力的拆分是核心 拆还是不拆？（耦合、解耦共用代码改多处、收益在哪里？） 如何拆？">
+<meta name="keywords" content="计算机 程序员 java blockchain go 西电 摄影 文学 经济 理财">
+<meta property="og:type" content="article">
+<meta property="og:title" content="fengziboboy&amp;个人博客">
+<meta property="og:url" content="https://xdcrazyboy.github.io/2018/08/28/分布式服务架构/微服务那些事儿/index.html">
+<meta property="og:site_name" content="fengziboboy&amp;个人博客">
+<meta property="og:description" content="阅读书目：《微服务那些事儿》，鼓励大家支持，书很薄。 为什么选择微服务别人挫呀-传统架构的问题 笨拙 耦合严重 协作困难 无法持续交付 受技术栈限制-技术选型受限 债务多，该bug太难了，越改越多  微服务可以解决那些挫 架构轻量灵活、可应付需求的变化 可持续交付 业务敏捷 独立演进 高可用、高性能 站在云端  业务能力的拆分是核心 拆还是不拆？（耦合、解耦共用代码改多处、收益在哪里？） 如何拆？">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-08-26T21:28:10.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="fengziboboy&amp;个人博客">
+<meta name="twitter:description" content="阅读书目：《微服务那些事儿》，鼓励大家支持，书很薄。 为什么选择微服务别人挫呀-传统架构的问题 笨拙 耦合严重 协作困难 无法持续交付 受技术栈限制-技术选型受限 债务多，该bug太难了，越改越多  微服务可以解决那些挫 架构轻量灵活、可应付需求的变化 可持续交付 业务敏捷 独立演进 高可用、高性能 站在云端  业务能力的拆分是核心 拆还是不拆？（耦合、解耦共用代码改多处、收益在哪里？） 如何拆？">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://xdcrazyboy.github.io/2018/08/28/分布式服务架构/微服务那些事儿/"/>
+
+
+
+
+
+  <title> | fengziboboy&个人博客</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?0689121057a518213bd055c127761eef";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">fengziboboy&个人博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">欢迎小伙伴的到来</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-主页">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            主页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-分类">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-文章">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            文章
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-简历">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            简历
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-公益404">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://xdcrazyboy.github.io/2018/08/28/分布式服务架构/微服务那些事儿/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="fengziboboy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="fengziboboy&个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline"></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-28T00:00:35+08:00">
+                2018-08-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/28/分布式服务架构/微服务那些事儿/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/08/28/分布式服务架构/微服务那些事儿/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>阅读书目：《微服务那些事儿》，鼓励大家支持，书很薄。</p>
+<h2 id="为什么选择微服务"><a href="#为什么选择微服务" class="headerlink" title="为什么选择微服务"></a>为什么选择微服务</h2><h3 id="别人挫呀-传统架构的问题"><a href="#别人挫呀-传统架构的问题" class="headerlink" title="别人挫呀-传统架构的问题"></a>别人挫呀-传统架构的问题</h3><ol>
+<li>笨拙</li>
+<li>耦合严重</li>
+<li>协作困难</li>
+<li>无法持续交付</li>
+<li>受技术栈限制-技术选型受限</li>
+<li>债务多，该bug太难了，越改越多</li>
+</ol>
+<h3 id="微服务可以解决那些挫"><a href="#微服务可以解决那些挫" class="headerlink" title="微服务可以解决那些挫"></a>微服务可以解决那些挫</h3><ol>
+<li>架构轻量灵活、可应付需求的变化</li>
+<li>可持续交付</li>
+<li>业务敏捷</li>
+<li>独立演进</li>
+<li>高可用、高性能</li>
+<li>站在云端</li>
+</ol>
+<h3 id="业务能力的拆分是核心"><a href="#业务能力的拆分是核心" class="headerlink" title="业务能力的拆分是核心"></a>业务能力的拆分是核心</h3><ol>
+<li>拆还是不拆？（耦合、解耦共用代码改多处、收益在哪里？）</li>
+<li>如何拆？（熟悉系统：数据模型和业务模型、金字塔结构）<ul>
+<li>关键指标<ol>
+<li>公共的业务功能</li>
+<li>重点业务</li>
+<li>对系统影响大的业务功能</li>
+<li>经常变化的业务主体</li>
+<li>特殊业务主体</li>
+<li>不同业务渠道</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>粒度  （结合实际情况，循序渐进，抓大放小）</li>
+<li>边界 （边界清晰、分工明确）</li>
+</ol>
+<p>无关其技、唯手熟尔。</p>
+<h3 id="如何使用微服务"><a href="#如何使用微服务" class="headerlink" title="如何使用微服务"></a>如何使用微服务</h3><ol>
+<li>如何规划<ul>
+<li>全局性</li>
+<li>针对性</li>
+<li>良性发展</li>
+<li>格局大</li>
+</ul>
+</li>
+<li>微服务重构<ul>
+<li>影响因素</li>
+<li>重构原则<blockquote>
+<p>前后端分离、代价最小原则、影响最小原则、吐故纳新。</p>
+<ul>
+<li>重构方法<br>接骨法（服务化，Rest接口，消息队列，管道链接业务）、分批逃跑法（分批拆）、<br>修路法（占用部分车道，保证路还是可以通的）</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<p>不要低估了微服务的复杂度、也不要觉得微服务国语复杂。</p>
+<h3 id="微服务的朋友圈"><a href="#微服务的朋友圈" class="headerlink" title="微服务的朋友圈"></a>微服务的朋友圈</h3><ol>
+<li>容器（容器的标签就是隔离；微服务拆分太多，部署复杂，而容器就相当于微服务的东风；）<ul>
+<li>好处：环境一致性、减少了部署的重复工作、快速交付、安全性高、易集成、自带体系</li>
+</ul>
+</li>
+<li>DevOps（开发+运维），跟微服务天生一对，以前团队人少可以践行DevOps，现在用微服务，团队拆分之后，又恢复到了以前。</li>
+<li>SOA（面向服务的架构）有ESB，Web Service，不过跟微服务还是很多不同。<blockquote>
+<p>整体，水平多层，按层级划分部门，粗粒度，有复杂组件，业务逻辑跨多个领域，ESB充当服务之间的通信。</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="技术实现"><a href="#技术实现" class="headerlink" title="技术实现"></a>技术实现</h2><h3 id="Spring-Boot-Spring-Cloud-（Liquibase、Swagger、Sonar）"><a href="#Spring-Boot-Spring-Cloud-（Liquibase、Swagger、Sonar）" class="headerlink" title="Spring Boot + Spring Cloud （Liquibase、Swagger、Sonar）"></a>Spring Boot + Spring Cloud （Liquibase、Swagger、Sonar）</h3><h3 id="Spring-Boot"><a href="#Spring-Boot" class="headerlink" title="Spring Boot"></a>Spring Boot</h3><p><strong>特点</strong></p>
+<ol>
+<li>快速构建Spring应用</li>
+<li>内嵌tomcat、jetty容器，无需单独安装容器</li>
+<li>简化了maven、gradle配置</li>
+<li>通过注解自动化配置了Spring，实现零配置</li>
+<li>可以和其他主流框架无缝集成，如Spring Cloud</li>
+<li>jar包直接运行。</li>
+</ol>
+<h3 id="Spring-Cloud"><a href="#Spring-Cloud" class="headerlink" title="Spring Cloud"></a>Spring Cloud</h3><p><strong>特点</strong></p>
+<ol>
+<li>功能齐全</li>
+<li>标准化</li>
+<li>简单方便</li>
+<li>按需取用</li>
+<li>轻量</li>
+<li>易扩展、易维护</li>
+<li>可复用性</li>
+</ol>
+<p><strong>服务管理</strong></p>
+<p><strong>注册中心-Eureka</strong></p>
+<ul>
+<li><p>服务端和客户端，发现和被发现-注册和被注册的关系</p>
+</li>
+<li><p>发现实际的服务的网络地址，便于被外界发现和使用。</p>
+</li>
+</ul>
+<p><strong>网关-Zuul</strong>（智能路由，类似的有Nginx）</p>
+<ul>
+<li><p>最重要的作用：<strong>为前台提供后台服务的聚合</strong>，提供一个统一的服务出口，解除它们之间的耦合，同时负责鉴权、<strong>认证</strong>、<strong>安全和调度</strong>。过滤器实现。</p>
+</li>
+<li><p><strong>反向代理</strong>：代理的是服务端，前台不需要知道真正的服务端是谁，交给Zuul负责路由到合适的服务上（负载均衡）。路由匹配。</p>
+</li>
+<li><p><strong>正向代理</strong>:代理的是客户端，（类似代购，商家不知道是谁要买）。</p>
+</li>
+</ul>
+<p><strong>客户端负载均衡-Ribbon</strong></p>
+<p>也就是选择合适的服务端，减少服务端的压力。</p>
+<h3 id="微服务架构的通信方式"><a href="#微服务架构的通信方式" class="headerlink" title="微服务架构的通信方式"></a>微服务架构的通信方式</h3><ol>
+<li><p>同步</p>
+<ul>
+<li>Rest(主流，是一套风格规范，面向资源的)</li>
+<li>SOAP(面向方法)</li>
+<li>RPC (dubbo，面向接口)</li>
+</ul>
+</li>
+<li><p>异步</p>
+<ul>
+<li>吞吐能力强，需要消息队列！！！<blockquote>
+<p>JMS、ActiveMQ、Kafka、RabbitMQ。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat_qrcode.jpg" alt="fengziboboy wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信订阅号，貌似啥都没写！</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>Donate comment here</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="fengziboboy 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/28/Java基础/多线程&并发编程/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/28/分布式服务架构/架构设计/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="fengziboboy" />
+            
+              <p class="site-author-name" itemprop="name">fengziboboy</p>
+              <p class="site-description motion-element" itemprop="description">这是一个会java、c++、python、go、javascript，研究区块链、云计算、容器、虚拟化、密码学，爱好摄影、旅行、历史、经济、心理学 的程序员之个人博客</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/xdcrazyboy" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:fengziboboy@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://juejin.im/user/58a70bd661ff4b45461e6bf3" target="_blank" title="掘金">
+                      
+                        <i class="fa fa-fw fa-vk"></i>掘金</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://baidu.com/" title="百度" target="_blank">百度</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么选择微服务"><span class="nav-number">1.</span> <span class="nav-text">为什么选择微服务</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#别人挫呀-传统架构的问题"><span class="nav-number">1.1.</span> <span class="nav-text">别人挫呀-传统架构的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#微服务可以解决那些挫"><span class="nav-number">1.2.</span> <span class="nav-text">微服务可以解决那些挫</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#业务能力的拆分是核心"><span class="nav-number">1.3.</span> <span class="nav-text">业务能力的拆分是核心</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何使用微服务"><span class="nav-number">1.4.</span> <span class="nav-text">如何使用微服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#微服务的朋友圈"><span class="nav-number">1.5.</span> <span class="nav-text">微服务的朋友圈</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#技术实现"><span class="nav-number">2.</span> <span class="nav-text">技术实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring-Boot-Spring-Cloud-（Liquibase、Swagger、Sonar）"><span class="nav-number">2.1.</span> <span class="nav-text">Spring Boot + Spring Cloud （Liquibase、Swagger、Sonar）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring-Boot"><span class="nav-number">2.2.</span> <span class="nav-text">Spring Boot</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring-Cloud"><span class="nav-number">2.3.</span> <span class="nav-text">Spring Cloud</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#微服务架构的通信方式"><span class="nav-number">2.4.</span> <span class="nav-text">微服务架构的通信方式</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">fengziboboy</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'https://xdcrazyboy.github.io/2018/08/28/分布式服务架构/微服务那些事儿/';
+          this.page.identifier = '2018/08/28/分布式服务架构/微服务那些事儿/';
+          this.page.title = '';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
